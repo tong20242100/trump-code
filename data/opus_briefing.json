@@ -1,0 +1,175 @@
+{
+  "date": "2026-03-15",
+  "prepared_at": "2026-03-15T04:53:56Z",
+  "status": "PENDING",
+  "model_performance": {
+    "A1_tariff_bearish": {
+      "name": "盤中關稅→隔天跌",
+      "win_rate": 56.5,
+      "avg_return": -0.758,
+      "total_trades": 23
+    },
+    "A2_deal_bullish": {
+      "name": "DEAL 出現→隔天漲",
+      "win_rate": 52.2,
+      "avg_return": 0.029,
+      "total_trades": 90
+    },
+    "A3_relief_rocket": {
+      "name": "盤前 RELIEF→當天飆",
+      "win_rate": 72.7,
+      "avg_return": 1.206,
+      "total_trades": 11
+    },
+    "B1_triple_signal": {
+      "name": "三信號齊發→買3天",
+      "win_rate": 64.7,
+      "avg_return": 0.597,
+      "total_trades": 17
+    },
+    "B2_tariff_to_deal": {
+      "name": "連3天關稅→出現Deal→轉折",
+      "win_rate": 57.9,
+      "avg_return": 0.721,
+      "total_trades": 19
+    },
+    "B3_action_pre": {
+      "name": "盤前 ACTION+正面情緒→漲",
+      "win_rate": 66.7,
+      "avg_return": 0.199,
+      "total_trades": 33
+    },
+    "C1_burst_silence": {
+      "name": "轟炸→長沉默→做多",
+      "win_rate": 65.3,
+      "avg_return": 0.145,
+      "total_trades": 176
+    },
+    "C2_brag_top": {
+      "name": "炫耀股市→短期到頂",
+      "win_rate": 45.0,
+      "avg_return": 0.105,
+      "total_trades": 60
+    },
+    "C3_night_alert": {
+      "name": "深夜關稅推文→開盤跳空",
+      "win_rate": 37.5,
+      "avg_return": -0.414,
+      "total_trades": 8
+    },
+    "D2_sig_change": {
+      "name": "簽名切換→正式聲明",
+      "win_rate": 70.0,
+      "avg_return": 0.472,
+      "total_trades": 80
+    },
+    "D3_volume_spike": {
+      "name": "發文量暴增→恐慌底部",
+      "win_rate": 70.2,
+      "avg_return": 0.306,
+      "total_trades": 47
+    }
+  },
+  "recent_wrong": [
+    {
+      "model": "C1_burst_silence",
+      "date": "2026-03-05",
+      "direction": "LONG",
+      "actual_return": -1.621
+    },
+    {
+      "model": "A2_deal_bullish",
+      "date": "2026-03-10",
+      "direction": "LONG",
+      "actual_return": -0.305
+    },
+    {
+      "model": "C1_burst_silence",
+      "date": "2026-03-11",
+      "direction": "LONG",
+      "actual_return": -1.73
+    },
+    {
+      "model": "A2_deal_bullish",
+      "date": "2026-03-13",
+      "direction": "LONG",
+      "actual_return": -0.619
+    },
+    {
+      "model": "C1_burst_silence",
+      "date": "2026-03-13",
+      "direction": "LONG",
+      "actual_return": -0.619
+    }
+  ],
+  "learning_summary": {
+    "promoted": 4,
+    "demoted": 1,
+    "eliminated": 1,
+    "signal_adjusted": 2
+  },
+  "evolution_latest": {
+    "date": "2026-03-15",
+    "crossover": 16,
+    "mutation": 12,
+    "distill": 18,
+    "total_new": 46,
+    "total_rules_after": 546,
+    "top_3": [
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_thank_you_for_your_attention",
+          "kw_economy"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 100.0,
+        "origin": "crossover"
+      },
+      {
+        "features": [
+          "kw_interest_rate",
+          "kw_dow_2plus"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 100.0,
+        "origin": "distilled"
+      },
+      {
+        "features": [
+          "kw_deal",
+          "kw_beautiful",
+          "volume_falling_3d"
+        ],
+        "direction": "LONG",
+        "hold": 3,
+        "score": 94.4,
+        "origin": "crossover"
+      }
+    ]
+  },
+  "signal_confidence": {
+    "TARIFF": 0.7,
+    "DEAL": 0.65,
+    "RELIEF": 0.7,
+    "ACTION": 0.776,
+    "THREAT": 0.55,
+    "CHINA": 0.6,
+    "IRAN": 0.55,
+    "TARIFF_ONLY": 0.7,
+    "DEAL_ONLY": 0.65
+  },
+  "prediction_market": {
+    "date": "2026-03-15",
+    "signals": [
+      "DEAL",
+      "CHINA",
+      "IRAN",
+      "DEAL_ONLY"
+    ],
+    "opportunities": [],
+    "total_scanned": 0
+  }
+}
