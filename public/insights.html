@@ -1,1042 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRUMP CODE 川普密碼</title>
-  <style>
-    /* === 全域重置與深色暖調主題 === */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg-primary: #0a0e1a;
-      --bg-secondary: #111827;
-      --bg-card: #1a2332;
-      --bg-card-hover: #243044;
-      --text-primary: #f0f0f0;
-      --text-secondary: #a0b0c0;
-      --text-muted: #607080;
-      --accent-gold: #FFD700;
-      --accent-amber: #CC0000;
-      --accent-warm: #BF0A30;
-      --accent-green: #6abf69;
-      --accent-red: #e06060;
-      --border: #2a3a4e;
-      --radius: 12px;
-      --shadow: 0 4px 24px rgba(0,0,0,0.4);
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans TC', 'Noto Sans JP', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      line-height: 1.6;
-      min-height: 100vh;
-    }
-
-    /* === 頂部導航列 === */
-    .navbar {
-      background: var(--bg-secondary);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      backdrop-filter: blur(12px);
-    }
-
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .navbar-brand .logo {
-      font-size: 28px;
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--accent-gold), var(--accent-amber));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      letter-spacing: -0.5px;
-    }
-
-    .navbar-brand .badge {
-      font-size: 11px;
-      background: var(--accent-warm);
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 999px;
-      font-weight: 600;
-    }
-
-    .navbar-links {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
-    .navbar-links a {
-      color: var(--text-secondary);
-      text-decoration: none;
-      font-size: 14px;
-      transition: color 0.2s;
-    }
-
-    .navbar-links a:hover { color: var(--accent-gold); }
-
-    .github-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--bg-card);
-      padding: 6px 14px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      font-size: 13px;
-      color: var(--text-primary) !important;
-      transition: all 0.2s;
-    }
-
-    .github-link:hover {
-      background: var(--bg-card-hover);
-      border-color: var(--accent-gold);
-    }
-
-    .github-link svg { width: 18px; height: 18px; fill: var(--text-primary); }
-
-    /* === 主容器 === */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 24px 16px;
-    }
-
-    /* === 三語標題區 === */
-    .hero {
-      text-align: center;
-      padding: 40px 16px 32px;
-    }
-
-    .hero h1 {
-      font-size: clamp(28px, 5vw, 42px);
-      font-weight: 800;
-      background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-amber) 50%, var(--accent-warm) 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin-bottom: 8px;
-    }
-
-    .hero .subtitle-row {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-
-    .hero .subtitle {
-      font-size: 16px;
-      color: var(--text-secondary);
-      font-weight: 400;
-    }
-
-    .hero .subtitle .divider {
-      color: var(--border);
-      margin: 0 4px;
-    }
-
-    .hero .live-dot {
-      display: inline-block;
-      width: 8px;
-      height: 8px;
-      background: var(--accent-green);
-      border-radius: 50%;
-      margin-right: 6px;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(0.8); }
-    }
-
-    /* === 狀態面板（頂部四格） === */
-    .status-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
-      margin-bottom: 28px;
-    }
-
-    .status-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-      transition: all 0.2s;
-    }
-
-    .status-card:hover {
-      background: var(--bg-card-hover);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .status-card .label {
-      font-size: 12px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 6px;
-    }
-
-    .status-card .value {
-      font-size: 26px;
-      font-weight: 700;
-      color: var(--accent-gold);
-    }
-
-    .status-card .sub {
-      font-size: 12px;
-      color: var(--text-secondary);
-      margin-top: 4px;
-    }
-
-    /* === 區塊卡片 === */
-    .section {
-      background: var(--bg-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      margin-bottom: 24px;
-      overflow: hidden;
-    }
-
-    .section-header {
-      padding: 18px 24px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .section-header h2 {
-      font-size: 18px;
-      font-weight: 700;
-      color: var(--text-primary);
-    }
-
-    .section-header .tag {
-      font-size: 11px;
-      background: rgba(212, 168, 72, 0.15);
-      color: var(--accent-gold);
-      padding: 4px 10px;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-
-    .section-body {
-      padding: 20px 24px;
-    }
-
-    /* === 今日信號列表 === */
-    .signal-list {
-      list-style: none;
-    }
-
-    .signal-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 14px 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .signal-item:last-child { border-bottom: none; }
-
-    .signal-icon {
-      width: 36px;
-      height: 36px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      flex-shrink: 0;
-      background: rgba(212, 168, 72, 0.12);
-    }
-
-    .signal-content { flex: 1; }
-
-    .signal-title {
-      font-weight: 600;
-      font-size: 14px;
-      color: var(--text-primary);
-      margin-bottom: 2px;
-    }
-
-    .signal-desc {
-      font-size: 13px;
-      color: var(--text-secondary);
-    }
-
-    .signal-score {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--accent-gold);
-      flex-shrink: 0;
-      min-width: 48px;
-      text-align: right;
-    }
-
-    .score-bullish { color: var(--accent-green); }
-    .score-bearish { color: var(--accent-red); }
-
-    /* === 模型排行表格 === */
-    .ranking-table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .ranking-table th {
-      text-align: left;
-      font-size: 11px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      padding: 10px 12px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .ranking-table td {
-      padding: 12px;
-      font-size: 14px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .ranking-table tr:last-child td { border-bottom: none; }
-
-    .ranking-table tr:hover td {
-      background: rgba(212, 168, 72, 0.04);
-    }
-
-    .rank-badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 13px;
-    }
-
-    .rank-1 { background: linear-gradient(135deg, #d4a848, #b8922e); color: #1a1410; }
-    .rank-2 { background: linear-gradient(135deg, #a8a8a8, #888); color: #1a1410; }
-    .rank-3 { background: linear-gradient(135deg, #c47832, #a06028); color: #1a1410; }
-    .rank-other { background: var(--bg-secondary); color: var(--text-muted); }
-
-    .accuracy-bar {
-      width: 80px;
-      height: 6px;
-      background: var(--bg-primary);
-      border-radius: 3px;
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: middle;
-      margin-left: 8px;
-    }
-
-    .accuracy-fill {
-      height: 100%;
-      border-radius: 3px;
-      background: linear-gradient(90deg, var(--accent-warm), var(--accent-gold));
-    }
-
-    /* === 群眾洞見卡片列表 === */
-    .insight-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 16px;
-    }
-
-    .insight-card {
-      background: var(--bg-secondary);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px;
-      transition: all 0.2s;
-    }
-
-    .insight-card:hover {
-      border-color: var(--accent-gold);
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .insight-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .insight-source {
-      font-size: 11px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .insight-time {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    .insight-text {
-      font-size: 14px;
-      color: var(--text-primary);
-      line-height: 1.5;
-      margin-bottom: 10px;
-    }
-
-    .insight-tags {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
-
-    .insight-tag {
-      font-size: 11px;
-      background: rgba(212, 168, 72, 0.1);
-      color: var(--accent-gold);
-      padding: 2px 8px;
-      border-radius: 4px;
-    }
-
-    /* === 頁尾 === */
-    .footer {
-      text-align: center;
-      padding: 40px 16px;
-      color: var(--text-muted);
-      font-size: 13px;
-      border-top: 1px solid var(--border);
-      margin-top: 40px;
-    }
-
-    .footer a { color: var(--accent-gold); text-decoration: none; }
-    .footer a:hover { text-decoration: underline; }
-
-    /* === 更新倒數 === */
-    .refresh-bar {
-      font-size: 11px;
-      color: var(--text-muted);
-      text-align: center;
-      padding: 8px;
-    }
-
-    /* === 載入中動畫 === */
-    .loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 60px;
-      color: var(--text-muted);
-      gap: 10px;
-    }
-
-    .spinner {
-      width: 20px;
-      height: 20px;
-      border: 2px solid var(--border);
-      border-top-color: var(--accent-gold);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-
-    @keyframes spin { to { transform: rotate(360deg); } }
-
-    /* === 錯誤狀態 === */
-    .error-state {
-      text-align: center;
-      padding: 40px;
-      color: var(--text-muted);
-    }
-
-    .error-state .icon { font-size: 36px; margin-bottom: 12px; }
-
-    /* === 響應式設計 === */
-    @media (max-width: 768px) {
-      .navbar { padding: 12px 16px; flex-wrap: wrap; gap: 8px; }
-      .navbar-brand .logo { font-size: 22px; }
-      .status-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-      .status-card { padding: 14px; }
-      .status-card .value { font-size: 22px; }
-      .section-body { padding: 14px 16px; }
-      .insight-grid { grid-template-columns: 1fr; }
-      .ranking-table { font-size: 13px; }
-      .ranking-table th, .ranking-table td { padding: 8px 6px; }
-      .accuracy-bar { width: 50px; }
-      .hero { padding: 28px 16px 20px; }
-    }
-
-    @media (max-width: 480px) {
-      .status-grid { grid-template-columns: 1fr; }
-      .navbar-links { font-size: 12px; gap: 10px; }
-      .signal-item { flex-wrap: wrap; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRUMP CODE 川普密碼</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080c18;--bg2:#0f1628;--card:#151d30;--card2:#1a2540;
+  --gold:#FFD700;--red:#CC0000;--blue:#4488FF;--green:#44CC66;
+  --text:#e8e8e8;--dim:#8899aa;--border:#1e2e44;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans TC','Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:var(--gold);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* 容器 */
+.w{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* Hero */
+.hero{text-align:center;padding:48px 20px 32px;background:linear-gradient(180deg,#0a1020 0%,var(--bg) 100%)}
+.hero h1{font-size:clamp(28px,5vw,42px);color:var(--gold);letter-spacing:6px;font-weight:800}
+.hero .sub{color:var(--dim);font-size:14px;margin-top:4px;letter-spacing:2px}
+.stats{display:flex;justify-content:center;gap:clamp(16px,3vw,40px);margin-top:24px;flex-wrap:wrap}
+.stat{text-align:center}
+.stat .n{font-size:clamp(22px,4vw,32px);font-weight:800;color:var(--gold)}
+.stat .l{font-size:10px;color:var(--dim);line-height:1.3;margin-top:2px}
+
+/* 區塊 */
+.section{margin-top:32px}
+.section h2{font-size:18px;color:var(--gold);border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:16px}
+
+/* 發現卡片 */
+.discoveries{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.disc{border-radius:12px;padding:20px;transition:transform 0.2s}
+.disc:hover{transform:translateY(-2px)}
+.disc.red{background:rgba(204,0,0,0.12);border:1px solid rgba(204,0,0,0.4)}
+.disc.gold{background:rgba(255,215,0,0.08);border:1px solid rgba(255,215,0,0.3)}
+.disc.blue{background:rgba(68,136,255,0.08);border:1px solid rgba(68,136,255,0.3)}
+.disc .tag{font-size:12px;font-weight:700;margin-bottom:8px}
+.disc .val{font-size:20px;font-weight:700;color:var(--text)}
+.disc .desc{font-size:12px;color:var(--dim);margin-top:6px}
+
+/* 狀態格 */
+.status-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-top:16px}
+.scard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.scard .v{font-size:24px;font-weight:700;color:var(--text);margin:4px 0}
+.scard .l{font-size:11px;color:var(--dim)}
+
+/* 表格 */
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--dim);font-weight:600;padding:8px 12px;border-bottom:1px solid var(--border);font-size:11px;text-transform:uppercase}
+td{padding:10px 12px;border-bottom:1px solid rgba(30,46,68,0.5)}
+tr:hover{background:rgba(255,215,0,0.03)}
+.bar{height:4px;background:var(--border);border-radius:2px;margin-top:4px;overflow:hidden}
+.bar .fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--red),var(--gold))}
+
+/* 信號標籤 */
+.sig{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:600;margin:4px;background:var(--card);border:1px solid var(--border)}
+.sig.active{border-color:var(--gold);color:var(--gold)}
+
+/* 劇本 */
+.plays{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.play{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.play h3{font-size:15px;margin-bottom:10px}
+.play table{font-size:12px}
+.play th{font-size:10px}
+
+/* 平台對比 */
+.platform{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.pcard{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.pcard .name{font-size:14px;font-weight:700;color:var(--gold)}
+.pcard .detail{font-size:12px;color:var(--dim);margin-top:8px;line-height:1.6}
+
+/* 連接方式 */
+.connect{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.conn{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.conn h3{color:var(--gold);font-size:14px;margin-bottom:8px}
+.conn pre{background:var(--bg);padding:12px;border-radius:8px;font-size:11px;overflow-x:auto;color:var(--dim);margin-top:8px;line-height:1.5}
+
+/* Footer */
+.footer{text-align:center;padding:32px 20px;color:var(--dim);font-size:11px;border-top:1px solid var(--border);margin-top:40px}
+
+/* 聊天按鈕 */
+.fab{position:fixed;bottom:20px;right:20px;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#FFD700,#CC0000);color:#000;border:none;cursor:pointer;font-size:24px;box-shadow:0 4px 16px rgba(255,215,0,0.3);z-index:1000;transition:transform 0.2s}
+.fab:hover{transform:scale(1.1)}
+.chatbox{display:none;position:fixed;bottom:84px;right:20px;width:380px;max-width:90vw;height:500px;max-height:60vh;background:var(--bg);border:1px solid var(--border);border-radius:16px;z-index:1001;flex-direction:column;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.6)}
+.chatbox.open{display:flex}
+.chatbox .ch{padding:10px 16px;background:var(--card);display:flex;justify-content:space-between;align-items:center;border-radius:16px 16px 0 0}
+.chatbox .ch span{color:var(--gold);font-weight:700;font-size:13px}
+.chatbox .ch button{background:none;border:none;color:var(--dim);font-size:18px;cursor:pointer}
+.chatbox iframe{flex:1;border:none}
+
+/* 手機優化 */
+@media(max-width:600px){
+  .hero{padding:32px 16px 24px}
+  .stats{gap:12px}
+  .stat .n{font-size:22px}
+  .w{padding:0 12px}
+  .section{margin-top:24px}
+  .chatbox{width:calc(100vw - 24px);right:12px;bottom:80px;height:50vh}
+}
+</style>
 </head>
 <body>
 
-  <!-- 導航列 -->
-  <nav class="navbar">
-    <div class="navbar-brand">
-      <span class="logo">TRUMP CODE</span>
-      <span class="badge">LIVE</span>
-    </div>
-    <div class="navbar-links">
-      <a href="#signals">Signals 信號</a>
-      <a href="#rankings">Rankings 排行</a>
-      <a href="#insights">Insights</a>
-      <a href="https://github.com/washinmura/trump-code" target="_blank" rel="noopener" class="github-link">
-        <!-- GitHub SVG 圖示 -->
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
-            0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
-            -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66
-            .07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15
-            -.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0
-            1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56
-            .82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07
-            -.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-        </svg>
-        GitHub
-      </a>
-    </div>
-  </nav>
-
-  <!-- 標題 + 統計數字在最上面 -->
-  <div class="hero">
-    <h1 style="font-size:36px;letter-spacing:4px">TRUMP CODE</h1>
-    <div class="subtitle-row">
-      <span class="subtitle" style="font-size:15px">川普密碼</span>
-      <span class="subtitle" style="color: var(--border);">|</span>
-      <span class="subtitle" style="font-size:15px">トランプ・コード</span>
-    </div>
-
-    <!-- 統計數字（最上面！） -->
-    <div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:20px;padding:16px 0;">
-      <div style="text-align:center;min-width:80px">
-        <div style="color:#FFD700;font-size:28px;font-weight:bold">564</div>
-        <div style="color:var(--text-muted);font-size:11px;line-height:1.3">Verified<br>已驗證預測<br>検証済み</div>
-      </div>
-      <div style="text-align:center;min-width:80px">
-        <div style="color:#FFD700;font-size:28px;font-weight:bold">61.3%</div>
-        <div style="color:var(--text-muted);font-size:11px;line-height:1.3">Hit Rate<br>命中率<br>的中率</div>
-      </div>
-      <div style="text-align:center;min-width:80px">
-        <div style="color:#FFD700;font-size:28px;font-weight:bold">550</div>
-        <div style="color:var(--text-muted);font-size:11px;line-height:1.3">Rules<br>存活規則<br>ルール</div>
-      </div>
-      <div style="text-align:center;min-width:80px">
-        <div style="color:#FFD700;font-size:28px;font-weight:bold">11</div>
-        <div style="color:var(--text-muted);font-size:11px;line-height:1.3">Models<br>模型<br>モデル</div>
-      </div>
-      <div style="text-align:center;min-width:80px">
-        <div style="color:#FFD700;font-size:28px;font-weight:bold">2</div>
-        <div style="color:var(--text-muted);font-size:11px;line-height:1.3">Markets<br>預測市場<br>市場</div>
-      </div>
-    </div>
-
-    <p style="font-size:12px;color:var(--text-muted)">
-      <span class="live-dot"></span>
-      <span id="refresh-text">Auto-refresh 30s</span>
-    </p>
+<!-- HERO -->
+<div class="hero">
+  <h1>TRUMP CODE</h1>
+  <div class="sub">川普密碼 ・ トランプ・コード</div>
+  <div class="stats">
+    <div class="stat"><div class="n">564</div><div class="l">Verified 已驗證<br>検証済み</div></div>
+    <div class="stat"><div class="n">61.3%</div><div class="l">Hit Rate 命中率<br>的中率</div></div>
+    <div class="stat"><div class="n">550</div><div class="l">Rules 規則<br>ルール</div></div>
+    <div class="stat"><div class="n">11</div><div class="l">Models 模型<br>モデル</div></div>
+    <div class="stat"><div class="n">2</div><div class="l">Markets 市場<br>マーケット</div></div>
   </div>
+</div>
 
-  <div class="container">
+<div class="w">
 
-    <!-- 重大發現（最吸引眼球的數據） -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-bottom:24px;" id="discovery-cards">
-      <div style="background:rgba(204,0,0,0.15);border:1px solid #CC0000;border-radius:12px;padding:16px;">
-        <div style="font-size:13px;color:#CC0000;font-weight:bold;margin-bottom:6px">🔴 Most Dangerous 最危險 最も危険</div>
-        <div style="font-size:14px;color:var(--text-primary)">純關稅日 = -1.057%<br>Pure Tariff day = biggest drop</div>
-        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">只喊關稅不談判 → 平均跌 1%</div>
-      </div>
-      <div style="background:rgba(255,215,0,0.1);border:1px solid #FFD700;border-radius:12px;padding:16px;">
-        <div style="font-size:13px;color:#FFD700;font-weight:bold;margin-bottom:6px">💰 Most Profitable 最賺錢 最も収益</div>
-        <div style="font-size:14px;color:var(--text-primary)">四信號齊發 = +2.792%<br>4 signals together = biggest gain</div>
-        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">關稅+談判+炫耀+寬減 → 大 Deal 在即</div>
-      </div>
-      <div style="background:rgba(100,180,255,0.1);border:1px solid #64B4FF;border-radius:12px;padding:16px;">
-        <div style="font-size:13px;color:#64B4FF;font-weight:bold;margin-bottom:6px">🤯 Biggest Surprise 最意外 最も意外</div>
-        <div style="font-size:14px;color:var(--text-primary)">他閉嘴 = 80% 上漲<br>He shuts up = 80% market goes UP</div>
-        <div style="font-size:11px;color:var(--text-muted);margin-top:4px">沒推文的日子市場最好！沈黙は金</div>
-      </div>
+<!-- 重大發現 -->
+<div class="section">
+  <h2>🔑 Key Discoveries 重大發現 重要な発見</h2>
+  <div class="discoveries">
+    <div class="disc red">
+      <div class="tag" style="color:#CC0000">🔴 Most Dangerous 最危險</div>
+      <div class="val">Pure Tariff = -1.057%</div>
+      <div class="desc">只喊關稅不談判 → 平均跌 1%<br>関税だけでDealなし → 平均-1%<br>Historical: Apr 3 (-4.84%), Apr 4 (-5.97%)</div>
     </div>
-
-    <!-- 系統狀態（4 卡片） -->
-    <div class="status-grid" id="status-grid">
-      <div class="status-card">
-        <div class="label">System 系統 システム</div>
-        <div class="value" id="sys-status">--</div>
-        <div class="sub" id="sys-uptime"></div>
-      </div>
-      <div class="status-card">
-        <div class="label">Posts 推文 投稿</div>
-        <div class="value" id="sys-signals">--</div>
-        <div class="sub" id="sys-signals-sub"></div>
-      </div>
-      <div class="status-card">
-        <div class="label">Models 模型 モデル</div>
-        <div class="value" id="sys-models">--</div>
-        <div class="sub" id="sys-models-sub"></div>
-      </div>
-      <div class="status-card">
-        <div class="label">Direction 方向 方向</div>
-        <div class="value" id="sys-updated">--</div>
-        <div class="sub" id="sys-updated-sub"></div>
-      </div>
+    <div class="disc gold">
+      <div class="tag" style="color:#FFD700">💰 Most Profitable 最賺錢</div>
+      <div class="val">4 Signals = +2.792%</div>
+      <div class="desc">關稅+談判+炫耀+寬減 = 大 Deal 佈局<br>4シグナル同時 = ビッグディール前兆<br>12 occurrences, 66.7% up</div>
     </div>
-
-    <!-- 今日信號 -->
-    <div class="section" id="signals">
-      <div class="section-header">
-        <h2>Recent Signals / 最近信號 / 直近シグナル</h2>
-        <span class="tag" id="signal-count">Loading...</span>
-      </div>
-      <div class="section-body">
-        <div id="signal-list" class="loading">
-          <div class="spinner"></div>
-          <span>Loading signals...</span>
-        </div>
-      </div>
+    <div class="disc blue">
+      <div class="tag" style="color:#4488FF">🤯 Biggest Surprise 最意外</div>
+      <div class="val">Silence = 80% UP</div>
+      <div class="desc">他閉嘴的時候市場最好！<br>彼が黙ると市場は最高！<br>No posts = no bad news = market rises</div>
     </div>
-
-    <!-- 模型排行 -->
-    <div class="section" id="rankings">
-      <div class="section-header">
-        <h2>Model Rankings / 模型排行榜 / モデルランキング</h2>
-        <span class="tag">Accuracy 命中率</span>
-      </div>
-      <div class="section-body">
-        <div id="ranking-table" class="loading">
-          <div class="spinner"></div>
-          <span>Loading rankings...</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- 群眾洞見 -->
-    <div class="section" id="insights">
-      <div class="section-header">
-        <h2>Crowd Insights / 群眾洞見 / クラウド・インサイト</h2>
-        <span class="tag" id="insight-count">Loading...</span>
-      </div>
-      <div class="section-body">
-        <div id="insight-grid" class="loading">
-          <div class="spinner"></div>
-          <span>Loading insights...</span>
-        </div>
-      </div>
-    </div>
-
   </div>
+</div>
 
-  <!-- 頁尾 -->
-  <div class="footer">
-    <p>
-      TRUMP CODE 川普密碼 トランプコード &mdash; AI Signal Intelligence / AI 信號情報 / AI シグナル・インテリジェンス<br>
-      <a href="https://github.com/washinmura/trump-code" target="_blank" rel="noopener">Open Source on GitHub</a>
-      &nbsp;&middot;&nbsp; Data refreshes every 30 seconds
-    </p>
-    <p style="margin-top: 8px; font-size: 11px;">
-      This is a research project. Not financial advice. 本專案僅供研究用途。
-    </p>
+<!-- 即時狀態 -->
+<div class="section">
+  <h2>📊 Live Status 即時狀態 ライブ</h2>
+  <div class="status-row" id="status-grid">
+    <div class="scard"><div class="l">System 系統 システム</div><div class="v" id="s-health">--</div><div class="l" id="s-health2"></div></div>
+    <div class="scard"><div class="l">Posts 推文 投稿</div><div class="v" id="s-posts">--</div><div class="l" id="s-posts2"></div></div>
+    <div class="scard"><div class="l">Direction 方向 方向</div><div class="v" id="s-dir">--</div><div class="l" id="s-dir2"></div></div>
+    <div class="scard"><div class="l">VIX 恐慌 恐怖指数</div><div class="v" id="s-vix">--</div><div class="l" id="s-vix2"></div></div>
   </div>
+</div>
 
-  <script>
-    /**
-     * ===== 群眾洞見前端邏輯 =====
-     * - 每 30 秒從 /api/insights 和 /api/status 拉取資料
-     * - 無資料時顯示 placeholder
-     * - 錯誤時顯示友善提示
-     */
+<!-- 最近信號 -->
+<div class="section" id="signals">
+  <h2>📡 Recent Signals 最近信號 直近シグナル</h2>
+  <div id="signal-area" style="min-height:60px"><span style="color:var(--dim)">Loading...</span></div>
+</div>
 
-    const API_BASE = window.location.origin;
-    const REFRESH_INTERVAL = 30000; // 30 秒自動更新
+<!-- 模型排行 -->
+<div class="section" id="rankings">
+  <h2>🏆 Model Rankings 模型排行榜 モデルランキング</h2>
+  <div style="overflow-x:auto" id="model-area"><span style="color:var(--dim)">Loading...</span></div>
+</div>
 
-    let countdown = 30;
-    let countdownTimer = null;
+<!-- 三套劇本 -->
+<div class="section">
+  <h2>🎯 Three Playbooks 三套劇本 3つの戦略</h2>
+  <div class="plays">
+    <div class="play">
+      <h3>🛡️ Hedge 避險 ヘッジ</h3>
+      <table>
+        <tr><td>Pure Tariff 純關稅</td><td style="color:var(--red)">-1.057%</td><td style="color:var(--dim)">50% ↑</td></tr>
+        <tr><td>Attack 攻擊</td><td style="color:var(--red)">+0.159%</td><td style="color:var(--dim)">vs +0.244%</td></tr>
+        <tr><td>Threat 威脅</td><td style="color:var(--red)">+0.125%</td><td style="color:var(--dim)">vs +0.231%</td></tr>
+      </table>
+      <div class="desc" style="margin-top:8px;font-size:11px;color:var(--dim)">他罵人=他在焦慮=小心<br>彼が怒る=不安=注意</div>
+    </div>
+    <div class="play">
+      <h3>📊 Position 佈局 ポジション</h3>
+      <table>
+        <tr><td>D+M+R+T 四信號</td><td style="color:var(--green)">+2.792%</td><td style="color:var(--dim)">66.7% ↑</td></tr>
+        <tr><td>A+D 先攻再談</td><td style="color:var(--green)">+0.586%</td><td style="color:var(--dim)">65.2% ↑</td></tr>
+        <tr><td>A+T 攻擊+關稅</td><td style="color:var(--green)">+0.574%</td><td style="color:var(--dim)">72.7% ↑</td></tr>
+      </table>
+      <div class="desc" style="margin-top:8px;font-size:11px;color:var(--dim)">先打再談=典型 Trump 談判術<br>攻撃→交渉=トランプ流</div>
+    </div>
+    <div class="play">
+      <h3>🚀 Pump 拉盤 ポンプ</h3>
+      <table>
+        <tr><td>Silence 閉嘴</td><td style="color:var(--green)">+0.409%</td><td style="color:var(--dim)">80.0% ↑</td></tr>
+        <tr><td>Brag Only 炫耀</td><td style="color:var(--green)">+0.520%</td><td style="color:var(--dim)">71.4% ↑</td></tr>
+        <tr><td>Action 行動</td><td style="color:var(--green)">+0.294%</td><td style="color:var(--dim)">有實際行動</td></tr>
+      </table>
+      <div class="desc" style="margin-top:8px;font-size:11px;color:var(--dim)">心情好才用 X=做多<br>機嫌が良い時Xを使う=ロング</div>
+    </div>
+  </div>
+</div>
 
-    // === 工具函式 ===
+<!-- 雙平台 -->
+<div class="section">
+  <h2>🔐 Dual Platform TS vs X 雙平台密碼</h2>
+  <div class="platform">
+    <div class="pcard">
+      <div class="name">🇨🇳 China = Hidden 完全隱藏</div>
+      <div class="detail">Truth Social: 203 posts 篇<br>X/Twitter: 0 posts 篇<br>→ 信號加權 ×1.5（更真實）</div>
+    </div>
+    <div class="pcard">
+      <div class="name">⏱️ 6.2h Window 操作窗口</div>
+      <div class="detail">TS 先發，X 晚 6.2 小時<br>38/39 matched posts<br>→ 窗口內 63% 偏漲</div>
+    </div>
+    <div class="pcard">
+      <div class="name">📉 X Fading X 效應消退</div>
+      <div class="detail">X 發文日: +0.109%<br>隔天回吐: -0.087%<br>→ X 使用率持續下降中</div>
+    </div>
+  </div>
+</div>
 
-    /** 格式化時間戳為可讀字串 */
-    function formatTime(ts) {
-      if (!ts) return '--';
-      const d = new Date(ts);
-      if (isNaN(d.getTime())) return ts;
-      return d.toLocaleString('en-US', {
-        month: 'short', day: 'numeric',
-        hour: '2-digit', minute: '2-digit',
-        hour12: false
-      });
-    }
+<!-- 預測市場 -->
+<div class="section">
+  <h2>🔗 Prediction Markets 預測市場 予測市場</h2>
+  <div class="platform">
+    <div class="pcard"><div class="name">Polymarket</div><div class="detail">$56B volume 交易量<br>✅ Real-time prices 即時價格<br>Signal-based arbitrage 信號套利</div></div>
+    <div class="pcard"><div class="name">Kalshi</div><div class="detail">$44B volume 交易量<br>✅ Cross-platform spread 跨平台價差<br>CFTC regulated 受監管</div></div>
+    <div class="pcard"><div class="name">Truth Predict</div><div class="detail">Trump's own platform 自建<br>⏳ Pending launch 等上線<br>Crypto.com partnership</div></div>
+  </div>
+</div>
 
-    /** 根據分數回傳 CSS class */
-    function scoreClass(score) {
-      if (score > 0) return 'score-bullish';
-      if (score < 0) return 'score-bearish';
-      return '';
-    }
+<!-- 群眾洞見 -->
+<div class="section">
+  <h2>💡 Crowd Insights 群眾洞見 クラウド・インサイト</h2>
+  <div id="crowd-area" style="min-height:40px">
+    <div style="color:var(--dim);padding:20px;text-align:center;background:var(--card);border-radius:12px">
+      No insights yet / 還沒有群眾洞見 / まだインサイトなし<br>
+      <small>按右下角 💬 分享你的交易邏輯！</small>
+    </div>
+  </div>
+</div>
 
-    /** 信號圖示（依據類型） */
-    function signalIcon(type) {
-      const icons = {
-        'truth_social': '\u{1F4E2}',
-        'executive_order': '\u{1F4DC}',
-        'tariff': '\u{1F4B0}',
-        'market': '\u{1F4C8}',
-        'deletion': '\u{1F5D1}',
-        'anomaly': '\u{26A0}',
-        'combo': '\u{1F3AF}'
-      };
-      return icons[type] || '\u{1F4A1}';
-    }
-
-    /** 排名徽章 class */
-    function rankClass(i) {
-      if (i === 0) return 'rank-1';
-      if (i === 1) return 'rank-2';
-      if (i === 2) return 'rank-3';
-      return 'rank-other';
-    }
-
-    /** 顯示錯誤狀態 */
-    function showError(containerId, message) {
-      const el = document.getElementById(containerId);
-      el.innerHTML = `
-        <div class="error-state">
-          <div class="icon">\u{1F50C}</div>
-          <p>${message}</p>
-          <p style="margin-top: 8px; font-size: 12px;">Will retry in 30 seconds...</p>
-        </div>`;
-    }
-
-    // === 資料拉取 ===
-
-    /** 從多個 API 讀取全部數據 */
-    async function fetchStatus() {
-      try {
-        const res = await fetch(`${API_BASE}/api/status`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const data = await res.json();
-
-        // 狀態卡：系統健康
-        const health = data.system_health || 'unknown';
-        const healthIcon = health.includes('attention') ? '🟡' : (health.includes('degrad') ? '🔴' : '✅');
-        document.getElementById('sys-status').textContent = healthIcon;
-        document.getElementById('sys-uptime').textContent =
-          health === 'needs_attention' ? '需要關注 Needs Attention' : health;
-
-        // 狀態卡：今日推文
-        document.getElementById('sys-signals').textContent = data.posts_today || 0;
-        document.getElementById('sys-signals-sub').textContent =
-          `posts | 信號: ${(data.signals || []).join(', ') || 'none'}`;
-
-        // 狀態卡：模型數
-        document.getElementById('sys-models').textContent = data.models || 0;
-        document.getElementById('sys-models-sub').textContent =
-          `models | ${data.total_rules || 550} rules`;
-
-        // 狀態卡：共識方向
-        const con = data.consensus || 'NEUTRAL';
-        const conIcon = con === 'BULLISH' ? '📈' : (con === 'BEARISH' ? '📉' : '➡️');
-        document.getElementById('sys-updated').textContent = conIcon + ' ' + con;
-        document.getElementById('sys-updated-sub').textContent = data.date || '';
-
-      } catch (err) {
-        console.warn('[status] fetch failed:', err.message);
-      }
-    }
-
-    /** 從 3 個 API 讀取信號+模型+洞見 */
-    async function fetchInsights() {
-      // 信號（完整版：最近一次 + 7 天歷史 + 劇本洞見）
-      try {
-        const sigRes = await fetch(`${API_BASE}/api/signals`);
-        if (sigRes.ok) {
-          const sigData = await sigRes.json();
-
-          // 最近一次的信號 + 最近 7 天歷史
-          const recentDays = sigData.recent_days || {};
-          const allSignals = [];
-
-          // 先加最近 7 天的歷史信號
-          Object.entries(recentDays).sort((a,b) => b[0].localeCompare(a[0])).forEach(([date, sigs]) => {
-            sigs.forEach(s => {
-              allSignals.push({
-                type: s.type, confidence: `×${s.count}`, date: date
-              });
-            });
-          });
-
-          // 如果沒歷史，用 daily_report 的
-          if (allSignals.length === 0) {
-            (sigData.signals || []).forEach(s => {
-              allSignals.push({ type: s, confidence: '—', date: sigData.date });
-            });
-          }
-
-          renderSignals(allSignals);
-
-          // 劇本洞見
-          const pb = sigData.playbook_summary || {};
-          const opusInsight = sigData.opus_insight || '';
-          if (pb.most_dangerous || opusInsight) {
-            const insightDiv = document.createElement('div');
-            insightDiv.style.cssText = 'margin-top:16px;padding:12px 16px;background:rgba(204,0,0,0.1);border:1px solid #CC0000;border-radius:8px;font-size:13px;';
-            let html = '';
-            if (pb.most_dangerous) html += `<div>🔴 ${escapeHtml(pb.most_dangerous)}</div>`;
-            if (pb.most_profitable) html += `<div style="margin-top:4px">💰 ${escapeHtml(pb.most_profitable)}</div>`;
-            if (pb.biggest_surprise) html += `<div style="margin-top:4px">🤯 ${escapeHtml(pb.biggest_surprise)}</div>`;
-            if (opusInsight) html += `<div style="margin-top:8px;color:#FFD700">🧠 Opus: ${escapeHtml(opusInsight)}</div>`;
-            insightDiv.innerHTML = html;
-            document.getElementById('signal-list').appendChild(insightDiv);
-          }
-        }
-      } catch(e) { console.warn('[signals]', e); }
-
-      // 模型排行
-      try {
-        const modRes = await fetch(`${API_BASE}/api/models`);
-        if (modRes.ok) {
-          const modData = await modRes.json();
-          const perf = modData.models || {};
-          const rankings = Object.entries(perf)
-            .map(([id, s]) => ({
-              name: s.name || id,
-              win_rate: s.win_rate,
-              avg_return: s.avg_return,
-              trades: s.total_trades,
-            }))
-            .sort((a, b) => b.win_rate - a.win_rate);
-          renderRankings(rankings);
-        }
-      } catch(e) { console.warn('[models]', e); }
-
-      // 群眾洞見
-      try {
-        const insRes = await fetch(`${API_BASE}/api/insights`);
-        if (insRes.ok) {
-          const insData = await insRes.json();
-          renderInsights(insData.insights || []);
-        }
-      } catch(e) { console.warn('[insights]', e); }
-    }
-
-    // === 渲染函式 ===
-
-    /** 渲染今日信號列表 */
-    function renderSignals(signals) {
-      const container = document.getElementById('signal-list');
-      document.getElementById('signal-count').textContent = `${signals.length} signals`;
-
-      if (signals.length === 0) {
-        container.innerHTML = `
-          <div class="error-state">
-            <div class="icon">\u{1F4ED}</div>
-            <p>No signals detected / 暫無信號 / シグナルなし</p>
-          </div>`;
-        return;
-      }
-
-      const sigLabels = {
-        'TARIFF': '🔴 關稅 Tariff 関税',
-        'DEAL': '🟢 談判 Deal ディール',
-        'RELIEF': '🕊️ 寬減 Relief 緩和',
-        'ACTION': '⚡ 行動 Action 行動',
-        'THREAT': '⚠️ 威脅 Threat 脅威',
-        'CHINA': '🇨🇳 中國 China 中国',
-        'IRAN': '🇮🇷 伊朗 Iran イラン',
-        'BULLISH': '📈 看多 Bullish 強気',
-        'BEARISH': '📉 看空 Bearish 弱気',
-        'TARIFF_ONLY': '🔴 純關稅 Tariff Only',
-        'DEAL_ONLY': '🟢 純談判 Deal Only',
-        'ATTACK': '⚔️ 攻擊 Attack 攻撃',
-        'MARKET_BRAG': '📊 炫耀股市 Market Brag',
-        'RUSSIA': '🇷🇺 俄羅斯 Russia ロシア',
-      };
-      container.innerHTML = `<ul class="signal-list">
-        ${signals.map(s => `
-          <li class="signal-item">
-            <div class="signal-icon">${signalIcon(s.type)}</div>
-            <div class="signal-content">
-              <div class="signal-title">${escapeHtml(sigLabels[s.type] || s.type || 'Signal')}</div>
-              <div class="signal-desc" style="color:var(--text-muted);font-size:12px">${escapeHtml(s.date || '')} ${escapeHtml(s.confidence || '')}</div>
-            </div>
-          </li>
-        `).join('')}
-      </ul>`;
-    }
-
-    /** 渲染模型排行表格 */
-    function renderRankings(rankings) {
-      const container = document.getElementById('ranking-table');
-
-      if (rankings.length === 0) {
-        container.innerHTML = `
-          <div class="error-state">
-            <div class="icon">\u{1F3C6}</div>
-            <p>No ranking data / 暫無排行 / ランキングなし</p>
-          </div>`;
-        return;
-      }
-
-      container.innerHTML = `
-        <table class="ranking-table">
-          <thead>
-            <tr>
-              <th># 排名</th>
-              <th>Model 模型</th>
-              <th>Accuracy 命中率</th>
-              <th>Trades 交易數</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${rankings.map((r, i) => {
-              const pct = r.win_rate ?? r.accuracy ?? r.score ?? 0;
-              const ret = r.avg_return ?? 0;
-              return `
-                <tr>
-                  <td><span class="rank-badge ${rankClass(i)}">${i + 1}</span></td>
-                  <td style="font-weight: 600;">${escapeHtml(r.name || r.model || 'Model')}</td>
-                  <td>
-                    ${pct.toFixed(1)}% <small style="color:#888">(${ret >= 0 ? '+' : ''}${ret.toFixed(3)}%)</small>
-                    <div class="accuracy-bar">
-                      <div class="accuracy-fill" style="width: ${Math.min(pct, 100)}%"></div>
-                    </div>
-                  </td>
-                  <td style="color: var(--text-secondary);">${r.trades ?? r.predictions ?? r.count ?? '--'} trades</td>
-                </tr>`;
-            }).join('')}
-          </tbody>
-        </table>`;
-    }
-
-    /** 渲染群眾洞見卡片 */
-    function renderInsights(insights) {
-      const container = document.getElementById('insight-grid');
-      document.getElementById('insight-count').textContent = `${insights.length} insights`;
-
-      if (insights.length === 0) {
-        container.innerHTML = `
-          <div class="error-state">
-            <div class="icon">\u{1F52E}</div>
-            <p>No insights yet / 還沒有群眾洞見 / まだインサイトがありません<br><small>跟聊天機器人分享你的想法，就會出現在這裡！💡</small></p>
-          </div>`;
-        return;
-      }
-
-      container.innerHTML = `<div class="insight-grid">
-        ${insights.map(ins => `
-          <div class="insight-card">
-            <div class="insight-meta">
-              <span class="insight-source">${escapeHtml(ins.source || ins.platform || 'Unknown')}</span>
-              <span class="insight-time">${formatTime(ins.timestamp || ins.time || ins.created_at)}</span>
-            </div>
-            <div class="insight-text">${escapeHtml(ins.text || ins.content || ins.summary || '')}</div>
-            <div class="insight-tags">
-              ${(ins.tags || []).map(t => `<span class="insight-tag">${escapeHtml(t)}</span>`).join('')}
-            </div>
-          </div>
-        `).join('')}
-      </div>`;
-    }
-
-    /** 防止 XSS 的 HTML 跳脫 */
-    function escapeHtml(str) {
-      if (!str) return '';
-      const div = document.createElement('div');
-      div.textContent = str;
-      return div.innerHTML;
-    }
-
-    // === 自動更新倒數計時 ===
-
-    function startCountdown() {
-      countdown = 30;
-      if (countdownTimer) clearInterval(countdownTimer);
-      countdownTimer = setInterval(() => {
-        countdown--;
-        const el = document.getElementById('refresh-text');
-        if (el) el.textContent = `Next refresh in ${countdown}s`;
-        if (countdown <= 0) {
-          clearInterval(countdownTimer);
-        }
-      }, 1000);
-    }
-
-    /** 主更新迴圈 */
-    async function refresh() {
-      startCountdown();
-      await Promise.all([fetchStatus(), fetchInsights()]);
-    }
-
-    // === 啟動 ===
-    refresh();
-    setInterval(refresh, REFRESH_INTERVAL);
-  </script>
-
-  <!-- 使用說明 -->
-  <div class="container" style="margin-top: 32px; padding-bottom: 40px;">
-    <div style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; line-height: 1.8;">
-      <h2 style="color: var(--accent-gold); margin-bottom: 16px; font-size: 20px;">
-        🔌 Connect / 連接方式 / 接続方法
-      </h2>
-
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-        <!-- API -->
-        <div>
-          <h3 style="color: #FFD700; font-size: 15px;">📡 API</h3>
-          <p style="color: var(--text-secondary); font-size: 13px; margin: 4px 0;">
-            REST JSON — 任何語言都能接<br>どの言語でもOK
-          </p>
-          <pre style="background:#111827;padding:12px;border-radius:8px;font-size:12px;overflow-x:auto;color:#a0b0c0">GET /api/signals    最新信號
-GET /api/models     模型排行
-GET /api/playbook   三套劇本（避險/佈局/拉盤）
-GET /api/health     系統健康
-GET /api/insights   群眾洞見
-GET /api/status     系統狀態</pre>
-        </div>
-
-        <!-- CLI -->
-        <div>
-          <h3 style="color: #FFD700; font-size: 15px;">💻 CLI</h3>
-          <p style="color: var(--text-secondary); font-size: 13px; margin: 4px 0;">
-            命令列工具 — 終端機直接查<br>コマンドラインツール
-          </p>
-          <pre style="background:#111827;padding:12px;border-radius:8px;font-size:12px;overflow-x:auto;color:#a0b0c0">git clone github.com/sstklen/trump-code
+<!-- 連接方式 -->
+<div class="section">
+  <h2>🔌 Connect 連接方式 接続方法</h2>
+  <div class="connect">
+    <div class="conn">
+      <h3>📡 API</h3>
+      <div style="font-size:12px;color:var(--dim)">REST JSON 任何語言 どの言語でもOK</div>
+      <pre>GET /api/signals    信號 シグナル
+GET /api/models     排行 ランキング
+GET /api/playbook   劇本 戦略
+GET /api/health     健康 ヘルス
+GET /api/insights   洞見 インサイト
+POST /api/chat      聊天 チャット</pre>
+    </div>
+    <div class="conn">
+      <h3>💻 CLI</h3>
+      <div style="font-size:12px;color:var(--dim)">命令列工具 コマンドライン</div>
+      <pre>git clone github.com/sstklen/trump-code
 cd trump-code
+pip install -r requirements.txt
 python3 trump_code_cli.py signals
 python3 trump_code_cli.py models
 python3 trump_code_cli.py predict
 python3 trump_code_cli.py json</pre>
-        </div>
-
-        <!-- MCP -->
-        <div>
-          <h3 style="color: #FFD700; font-size: 15px;">🤖 MCP Server</h3>
-          <p style="color: var(--text-secondary); font-size: 13px; margin: 4px 0;">
-            Claude Code / Cursor 直接問 AI<br>AIに直接聞く
-          </p>
-          <pre style="background:#111827;padding:12px;border-radius:8px;font-size:12px;overflow-x:auto;color:#a0b0c0">// ~/.claude/settings.json
+    </div>
+    <div class="conn">
+      <h3>🤖 MCP Server</h3>
+      <div style="font-size:12px;color:var(--dim)">Claude Code / Cursor 直接問 AI</div>
+      <pre>// ~/.claude/settings.json
 {
   "mcpServers": {
     "trump-code": {
@@ -1045,66 +276,115 @@ python3 trump_code_cli.py json</pre>
     }
   }
 }
-// 然後直接問：「川普密碼今天信號？」</pre>
-        </div>
-      </div>
-
-      <!-- GitHub 連結 -->
-      <div style="margin-top: 16px; text-align: center;">
-        <a href="https://github.com/sstklen/trump-code" target="_blank"
-           style="color: var(--accent-gold); text-decoration: none; font-size: 14px;">
-          ⭐ GitHub — All data open / 全部數據公開 / 全データ公開
-        </a>
-      </div>
+// 然後問：「川普密碼今天信號？」</pre>
     </div>
   </div>
+</div>
 
-  <!-- 浮動聊天按鈕 -->
-  <style>
-    .chat-fab {
-      position: fixed; bottom: 24px; right: 24px;
-      width: 60px; height: 60px; border-radius: 50%;
-      background: linear-gradient(135deg, #FFD700, #CC0000);
-      color: #000; border: none; cursor: pointer;
-      font-size: 28px; box-shadow: 0 4px 16px rgba(255,215,0,0.4);
-      z-index: 1000; transition: transform 0.2s;
-    }
-    .chat-fab:hover { transform: scale(1.1); }
-    .chat-popup {
-      display: none; position: fixed; bottom: 96px; right: 24px;
-      width: 380px; max-width: 90vw; height: 500px; max-height: 60vh;
-      background: #111; border: 1px solid #333; border-radius: 16px;
-      z-index: 1001; flex-direction: column; overflow: hidden;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.6);
-    }
-    .chat-popup.open { display: flex; }
-    .chat-popup iframe {
-      flex: 1; border: none; border-radius: 0 0 16px 16px;
-    }
-    .chat-header {
-      padding: 12px 16px; background: #1a1a2e;
-      border-bottom: 1px solid #333; display: flex;
-      justify-content: space-between; align-items: center;
-      border-radius: 16px 16px 0 0;
-    }
-    .chat-header span { color: #ffd700; font-weight: bold; font-size: 14px; }
-    .chat-header button {
-      background: none; border: none; color: #888; font-size: 20px; cursor: pointer;
-    }
-  </style>
+</div><!-- .w -->
 
-  <button class="chat-fab" onclick="toggleChat()" title="跟川普密碼聊天">💬</button>
-  <div class="chat-popup" id="chatPopup">
-    <div class="chat-header">
-      <span>💬 川普密碼 AI 助手</span>
-      <button onclick="toggleChat()">✕</button>
-    </div>
-    <iframe src="/chat"></iframe>
-  </div>
-  <script>
-    function toggleChat() {
-      document.getElementById('chatPopup').classList.toggle('open');
+<!-- Footer -->
+<div class="footer">
+  TRUMP CODE 川普密碼 トランプ・コード<br>
+  <a href="https://github.com/sstklen/trump-code">⭐ GitHub — All data open / 全部數據公開 / 全データ公開</a><br>
+  <small style="margin-top:8px;display:block">⚠️ Not financial advice / 非投資建議 / 投資助言ではない</small>
+</div>
+
+<!-- 聊天 -->
+<button class="fab" onclick="document.getElementById('cb').classList.toggle('open')" title="Chat 聊天">💬</button>
+<div class="chatbox" id="cb">
+  <div class="ch"><span>💬 Trump Code AI</span><button onclick="document.getElementById('cb').classList.remove('open')">✕</button></div>
+  <iframe src="/chat"></iframe>
+</div>
+
+<!-- 動態數據 -->
+<script>
+const B = window.location.origin;
+const esc = s => {const d=document.createElement('div');d.textContent=s;return d.innerHTML};
+
+async function load(){
+  // 狀態
+  try{
+    const d = await(await fetch(B+'/api/status')).json();
+    const h = d.system_health||'';
+    document.getElementById('s-health').textContent = h.includes('attention')?'🟡':h.includes('degrad')?'🔴':'✅';
+    document.getElementById('s-health2').textContent = h;
+    document.getElementById('s-posts').textContent = d.posts_today||0;
+    document.getElementById('s-posts2').textContent = (d.signals||[]).join(' ');
+    const c = d.consensus||'NEUTRAL';
+    document.getElementById('s-dir').textContent = c==='BULLISH'?'📈':c==='BEARISH'?'📉':'➡️';
+    document.getElementById('s-dir2').textContent = c + ' ' + (d.date||'');
+    document.getElementById('s-vix').textContent = '--';
+    document.getElementById('s-vix2').textContent = 'loading...';
+  }catch(e){}
+
+  // 信號
+  try{
+    const d = await(await fetch(B+'/api/signals')).json();
+    const days = d.recent_days||{};
+    const labels = {
+      TARIFF:'🔴 Tariff 關稅 関税',DEAL:'🟢 Deal 談判 ディール',RELIEF:'🕊️ Relief 寬減 緩和',
+      ACTION:'⚡ Action 行動',THREAT:'⚠️ Threat 威脅 脅威',ATTACK:'⚔️ Attack 攻擊 攻撃',
+      MARKET_BRAG:'📊 Brag 炫耀',CHINA:'🇨🇳 China 中國',IRAN:'🇮🇷 Iran 伊朗',
+      RUSSIA:'🇷🇺 Russia 俄羅斯',BULLISH:'📈 Bullish 看多',BEARISH:'📉 Bearish 看空'
+    };
+    let html = '';
+    const sorted = Object.entries(days).sort((a,b)=>b[0].localeCompare(a[0]));
+    sorted.forEach(([date,sigs])=>{
+      html += '<div style="margin-bottom:12px"><div style="font-size:12px;color:var(--dim);margin-bottom:6px">'+esc(date)+'</div><div style="display:flex;flex-wrap:wrap;gap:4px">';
+      sigs.forEach(s=>{
+        html += '<span class="sig active">'+(labels[s.type]||s.type)+' ×'+s.count+'</span>';
+      });
+      html += '</div></div>';
+    });
+    if(!html) html = '<div style="color:var(--dim);padding:16px">No recent signals / 暫無 / なし</div>';
+
+    // 劇本洞見
+    const pb = d.playbook_summary||{};
+    const opus = d.opus_insight||'';
+    if(pb.most_dangerous||opus){
+      html += '<div style="margin-top:16px;padding:14px;background:rgba(255,215,0,0.05);border:1px solid rgba(255,215,0,0.2);border-radius:10px;font-size:13px">';
+      if(opus) html += '<div style="color:var(--gold)">🧠 Opus AI: '+esc(opus)+'</div>';
+      html += '</div>';
     }
-  </script>
+    document.getElementById('signal-area').innerHTML = html;
+  }catch(e){document.getElementById('signal-area').innerHTML='<span style="color:var(--dim)">Error loading signals</span>'}
+
+  // 模型
+  try{
+    const d = await(await fetch(B+'/api/models')).json();
+    const m = d.models||{};
+    const rows = Object.entries(m).map(([id,s])=>({id,...s})).sort((a,b)=>b.win_rate-a.win_rate);
+    let html = '<table><thead><tr><th>#</th><th>Model 模型</th><th>Hit Rate 命中率</th><th>Return 報酬</th><th>Trades 交易</th></tr></thead><tbody>';
+    rows.forEach((r,i)=>{
+      const icon = r.win_rate>=70?'⭐':r.win_rate<50?'⚠️':'';
+      html += '<tr><td>'+icon+(i+1)+'</td><td style="font-weight:600">'+esc(r.name||r.id)+'</td>';
+      html += '<td>'+r.win_rate.toFixed(1)+'%<div class="bar"><div class="fill" style="width:'+Math.min(r.win_rate,100)+'%"></div></div></td>';
+      html += '<td style="color:'+(r.avg_return>=0?'var(--green)':'var(--red)')+'">'+((r.avg_return>=0?'+':'')+r.avg_return.toFixed(3))+'%</td>';
+      html += '<td style="color:var(--dim)">'+r.total_trades+'</td></tr>';
+    });
+    html += '</tbody></table>';
+    document.getElementById('model-area').innerHTML = html;
+  }catch(e){document.getElementById('model-area').innerHTML='<span style="color:var(--dim)">Error loading models</span>'}
+
+  // 群眾洞見
+  try{
+    const d = await(await fetch(B+'/api/insights')).json();
+    if(d.insights&&d.insights.length>0){
+      let html = '<div style="display:grid;gap:8px">';
+      d.insights.slice(-10).reverse().forEach(ins=>{
+        html += '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:12px;font-size:13px">';
+        html += '<div style="color:var(--dim);font-size:11px">'+esc(ins.time)+' · '+esc(ins.anon)+'</div>';
+        html += '<div style="margin-top:4px">💡 '+esc(ins.insight)+'</div></div>';
+      });
+      html += '</div>';
+      document.getElementById('crowd-area').innerHTML = html;
+    }
+  }catch(e){}
+}
+
+load();
+setInterval(load, 30000);
+</script>
 </body>
 </html>
