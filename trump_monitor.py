@@ -11,13 +11,16 @@
 
 import json
 import csv
+import logging
 import re
 import sys
 import time
 import urllib.request
 from collections import defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+from utils import est_hour, market_session, emotion_score
 
 BASE = Path(__file__).parent
 ARCHIVE_URL = "https://ix.cnn.io/data/truth-social/truth_archive.csv"
@@ -77,32 +80,7 @@ def classify_signals(content):
     return signals
 
 
-def est_hour(utc_str):
-    dt = datetime.fromisoformat(utc_str.replace('Z', '+00:00'))
-    return (dt.hour - 5) % 24, dt.minute
-
-
-def market_session(utc_str):
-    h, m = est_hour(utc_str)
-    if h < 9 or (h == 9 and m < 30):
-        return 'PRE_MARKET'
-    elif h < 16:
-        return 'MARKET_OPEN'
-    elif h < 20:
-        return 'AFTER_HOURS'
-    else:
-        return 'OVERNIGHT'
-
-
-def emotion_score(content):
-    score = 0
-    upper = sum(1 for c in content if c.isupper())
-    total = sum(1 for c in content if c.isalpha())
-    score += (upper / max(total, 1)) * 30
-    score += min(content.count('!') / max(len(content), 1) * 1000, 25)
-    caps_words = len(re.findall(r'\b[A-Z]{3,}\b', content))
-    score += min(caps_words * 2, 20)
-    return min(round(score, 1), 100)
+# est_hour, market_session, emotion_score 從 utils.py 匯入
 
 
 # ============================================================
@@ -214,17 +192,24 @@ class PredictionEngine:
             'prev_days': [],    # 前 7 天的每日摘要
             'recent_phrases': set(),  # 近 30 天出現過的 phrase
         }
+        # 已觸發的 (model_id, date) 組合，用於去重
+        self._triggered_set = set()
+        # 從現有 trades 初始化已觸發記錄
+        for mid, s in self.scores.items():
+            for t in s.get('trades', []):
+                if t.get('date'):
+                    self._triggered_set.add((mid, t['date']))
 
     def _load_scores(self):
         if SCORES_FILE.exists():
-            with open(SCORES_FILE) as f:
+            with open(SCORES_FILE, encoding='utf-8') as f:
                 return json.load(f)
         return {m: {'predictions': 0, 'correct': 0, 'wrong': 0, 'pending': 0,
                      'total_return': 0, 'trades': []}
                 for m in self.models}
 
     def save_scores(self):
-        with open(SCORES_FILE, 'w') as f:
+        with open(SCORES_FILE, 'w', encoding='utf-8') as f:
             json.dump(self.scores, f, ensure_ascii=False, indent=2)
 
     # --- 觸發條件 ---
@@ -295,6 +280,16 @@ class PredictionEngine:
         for model_id, model in self.models.items():
             try:
                 if model['trigger'](day_summary):
+                    # Finding #4: 檢查今天是否已經觸發過此模型（日期去重）
+                    if (model_id, date) in self._triggered_set:
+                        continue  # 今天已觸發過，跳過
+
+                    if model_id not in self.scores:
+                        self.scores[model_id] = {
+                            'predictions': 0, 'correct': 0, 'wrong': 0,
+                            'pending': 0, 'total_return': 0, 'trades': []
+                        }
+
                     pred = {
                         'model_id': model_id,
                         'model_name': model['name'],
@@ -302,23 +297,19 @@ class PredictionEngine:
                         'direction': model['direction'],
                         'hold_days': model['hold'],
                         'status': 'PENDING',
-                        'created_at': datetime.utcnow().isoformat() + 'Z',
+                        'created_at': datetime.now(timezone.utc).isoformat(),
                         'day_summary': {k: v for k, v in day_summary.items()
                                        if not isinstance(v, (set, list))},
                     }
                     predictions.append(pred)
 
-                    # 更新計分
-                    if model_id not in self.scores:
-                        self.scores[model_id] = {
-                            'predictions': 0, 'correct': 0, 'wrong': 0,
-                            'pending': 0, 'total_return': 0, 'trades': []
-                        }
+                    # 更新計分 + 記錄已觸發
                     self.scores[model_id]['predictions'] += 1
                     self.scores[model_id]['pending'] += 1
+                    self._triggered_set.add((model_id, date))
 
             except Exception as e:
-                pass
+                logging.exception(f"Model {model_id} failed: {e}")
 
         return predictions
 
@@ -425,10 +416,10 @@ def run_backtest():
     print("=" * 90)
 
     # 載入資料
-    with open(BASE / "clean_president.json") as f:
+    with open(BASE / "clean_president.json", encoding='utf-8') as f:
         posts = json.load(f)
 
-    with open(DATA / "market_SP500.json") as f:
+    with open(DATA / "market_SP500.json", encoding='utf-8') as f:
         sp500 = json.load(f)
 
     sp_by_date = {r['date']: r for r in sp500}
@@ -519,7 +510,7 @@ def run_backtest():
             # 更新計分
             mid = pred['model_id']
             if mid in engine.scores:
-                engine.scores[mid]['pending'] -= 1
+                engine.scores[mid]['pending'] = max(0, engine.scores[mid].get('pending', 0) - 1)
                 if correct:
                     engine.scores[mid]['correct'] += 1
                 else:
@@ -573,7 +564,7 @@ def run_backtest():
     engine.save_scores()
 
     # 存所有預測
-    with open(PREDICTIONS_FILE, 'w') as f:
+    with open(PREDICTIONS_FILE, 'w', encoding='utf-8') as f:
         json.dump(all_predictions, f, ensure_ascii=False, indent=2)
 
     print(f"\n💾 預測記錄存入 {PREDICTIONS_FILE.name}")
@@ -643,11 +634,11 @@ def run_monitor():
     cycle = 0
     while True:
         cycle += 1
-        now = datetime.utcnow()
-        est_now = (now.hour - 5) % 24
+        now = datetime.now(timezone.utc)
+        est_h, est_m = est_hour(now.isoformat())
 
         print(f"\n{'─'*60}")
-        print(f"  ⏰ 第 {cycle} 輪 | UTC {now.strftime('%H:%M')} | EST {est_now:02d}:{now.minute:02d}")
+        print(f"  第 {cycle} 輪 | UTC {now.strftime('%H:%M')} | EST {est_h:02d}:{est_m:02d}")
 
         # 抓最新推文
         new_posts = fetch_latest_posts(20)
@@ -739,7 +730,7 @@ def show_status():
         print("  尚未有成績，請先跑 --backtest")
         return
 
-    with open(SCORES_FILE) as f:
+    with open(SCORES_FILE, encoding='utf-8') as f:
         scores = json.load(f)
 
     engine = PredictionEngine()
