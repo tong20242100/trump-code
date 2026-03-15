@@ -308,12 +308,12 @@ These are the tools we used to build Trump Code — and everything else.
 
 Trump Codeを含む全プロジェクトを作るために使ったツールです。
 
-| Project | What it does | |
-|---------|-------------|---|
-| **[5x-cto](https://github.com/sstklen/5x-cto)** | Dev pipeline: 1 Claude MAX + 1 Codex = 5x capacity | 🚀 |
-| **[YES.md](https://github.com/sstklen/yes.md)** | AI governance: safety gates, evidence rules, anti-slack | ✅ |
-| **[AI.MD](https://github.com/sstklen/ai-md)** | Convert CLAUDE.md to AI-native format — higher compliance | 📝 |
-| **[Washin Playbook](https://github.com/sstklen/washin-playbook)** | The full story: 7 chapters, zero engineering background | 📚 |
+| Project | EN | 中文 | 日本語 | |
+|---------|----|----|--------|---|
+| **[5x-cto](https://github.com/sstklen/5x-cto)** | Dev pipeline: 1 MAX + 1 Codex = 5x capacity | 開發流水線：一個人當五個用 | 開発パイプライン：1人で5人分 | 🚀 |
+| **[YES.md](https://github.com/sstklen/yes.md)** | AI governance: safety gates + evidence rules | AI 治理：安全閘門 + 證據規則 | AIガバナンス：安全ゲート＋証拠ルール | ✅ |
+| **[AI.MD](https://github.com/sstklen/ai-md)** | Convert CLAUDE.md to AI-native format | 蒸餾 CLAUDE.md 為 AI 原生格式 | CLAUDE.mdをAIネイティブ形式に | 📝 |
+| **[Washin Playbook](https://github.com/sstklen/washin-playbook)** | The full story: 7 chapters, zero coding | 完整故事：7 章，零程式背景 | 全記録：7章、プログラミング経験ゼロ | 📚 |
 
 ---
 
