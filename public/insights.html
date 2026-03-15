@@ -142,6 +142,64 @@ tr:hover{background:rgba(255,215,0,0.03)}
   </div>
 </div>
 
+<!-- 完整 8 個發現 -->
+<div class="section">
+  <h2>📋 All 8 Discoveries 全部發現 全発見</h2>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>#</th><th>Discovery 發現</th><th>Evidence 數據</th><th>Action 行動</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td style="color:var(--gold)">RELIEF 是最強信號</td><td>Apr 9: +9.52%（最大單日漲幅）</td><td>信心度 0.85</td></tr>
+      <tr><td>2</td><td style="color:var(--red)">TARIFF→SHORT 70% 錯</td><td>斷路器分析發現</td><td>自動翻轉為 LONG</td></tr>
+      <tr><td>3</td><td>中國信號完全隱藏</td><td>203 篇 TS / 0 篇 X</td><td>加權 ×1.5</td></tr>
+      <tr><td>4</td><td>TS→X 延遲 6.2 小時</td><td>38/39 matched</td><td>6h 操作窗口</td></tr>
+      <tr><td>5</td><td style="color:var(--red)">大事前 3 天關稅 2.7 倍</td><td>288 交易日分析</td><td>事件偵測器監控</td></tr>
+      <tr><td>6</td><td>131 篇爆量 = 崩盤</td><td>Mar 10: -2.70%</td><td>爆量警報</td></tr>
+      <tr><td>7</td><td>interest_rate 最強特徵</td><td>122 條規則用到</td><td>進化引擎強化</td></tr>
+      <tr><td>8</td><td>C3 深夜推文是反指標</td><td>62% 錯 → 反著做 62% 對</td><td>已建反向規則</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<!-- 架構圖 -->
+<div class="section">
+  <h2>🏗️ Architecture 系統架構 アーキテクチャ</h2>
+  <div style="background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;overflow-x:auto">
+    <pre style="color:var(--dim);font-size:12px;line-height:1.8;margin:0">
+Trump 發推文 Truth Social
+       │
+       ▼  5 min 偵測
+┌──────────────────────────────────────────┐
+│  Real-Time Engine 即時引擎                │
+│  偵測 → 信號分類 → 雙平台加權              │
+│  → 事件醞釀偵測 → 雙軌快照(PM+SPY)         │
+│  → 預測 → 1h/3h/6h 驗證                  │
+└──────────────┬───────────────────────────┘
+               │
+┌──────────────┼───────────────────────────┐
+│  Daily Pipeline 每日管線（11 步）          │
+│  抓數據 → 算信號 → 跑 550 條規則預測       │
+│  → 驗證 → 斷路器 → PM 回饋                │
+│  → 學習(升/降/淘汰) → 進化(交配/突變/精煉) │
+│  → Opus 簡報 → 同步 GitHub                │
+└──────────────┬───────────────────────────┘
+               │
+┌──────────────┼───────────────────────────┐
+│  Three Brains 三個大腦                    │
+│  🧠 Opus — 因果分析（本機，不花錢）        │
+│  🧬 Evolver — 自動產生新規則              │
+│  🔒 Breaker — 全錯了就停 + 從錯誤學       │
+└──────────────┬───────────────────────────┘
+               │
+┌──────────────┼───────────────────────────┐
+│  Output 輸出                              │
+│  📊 Dashboard  💬 Chatbot  📡 API        │
+│  💻 CLI  🤖 MCP  💡 Crowd Wisdom         │
+└──────────────────────────────────────────┘</pre>
+  </div>
+</div>
+
 <!-- 即時狀態 -->
 <div class="section">
   <h2>📊 Live Status 即時狀態 ライブ</h2>
@@ -202,19 +260,23 @@ tr:hover{background:rgba(255,215,0,0.03)}
 <!-- 雙平台 -->
 <div class="section">
   <h2>🔐 Dual Platform TS vs X 雙平台密碼</h2>
-  <div class="platform">
-    <div class="pcard">
-      <div class="name">🇨🇳 China = Hidden 完全隱藏</div>
-      <div class="detail">Truth Social: 203 posts 篇<br>X/Twitter: 0 posts 篇<br>→ 信號加權 ×1.5（更真實）</div>
-    </div>
-    <div class="pcard">
-      <div class="name">⏱️ 6.2h Window 操作窗口</div>
-      <div class="detail">TS 先發，X 晚 6.2 小時<br>38/39 matched posts<br>→ 窗口內 63% 偏漲</div>
-    </div>
-    <div class="pcard">
-      <div class="name">📉 X Fading X 效應消退</div>
-      <div class="detail">X 發文日: +0.109%<br>隔天回吐: -0.087%<br>→ X 使用率持續下降中</div>
-    </div>
+  <div style="overflow-x:auto;margin-bottom:16px">
+  <table>
+    <thead><tr><th>#</th><th>Code 密碼</th><th>Data 數據</th><th>Meaning 意義</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td style="color:var(--gold)">🇨🇳 China = Hidden 完全隱藏</td><td>TS: 203 篇 / X: 0 篇</td><td>中國信號加權 ×1.5（刻意隱藏=更真實）</td></tr>
+      <tr><td>2</td><td>⏱️ TS→X 延遲 6.2 小時</td><td>38/39 篇 TS 先發</td><td>6 小時操作窗口（63% 偏漲）</td></tr>
+      <tr><td>3</td><td>📈 窗口內正報酬 63%</td><td>TS 發文 → X 轉貼之間</td><td>窗口內做多有優勢</td></tr>
+      <tr><td>4</td><td style="color:var(--green)">X 推文隔天報酬高 7 倍</td><td>X: +0.252% vs TS-only: +0.037%</td><td>X 出現 = 確認信號，報酬更高</td></tr>
+      <tr><td>5</td><td>X 使用率和市場正相關</td><td>相關係數 0.35</td><td>市場好時他比較常用 X（心情指標）</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div style="background:rgba(255,215,0,0.05);border:1px solid rgba(255,215,0,0.2);border-radius:10px;padding:14px;font-size:13px;color:var(--dim)">
+    <strong style="color:var(--gold)">核心結論 Core Insight コア・インサイト：</strong><br>
+    Truth Social 是政策信號源（預測用），X 是形象窗口（確認用）。<br>
+    TS = policy signal source (prediction), X = image window (confirmation).<br>
+    先在 TS 說，6 小時後才放 X。這 6 小時就是操作窗口。
   </div>
 </div>
 
@@ -236,6 +298,32 @@ tr:hover{background:rgba(255,215,0,0.03)}
       No insights yet / 還沒有群眾洞見 / まだインサイトなし<br>
       <small>按右下角 💬 分享你的交易邏輯！</small>
     </div>
+  </div>
+</div>
+
+<!-- 公開數據 -->
+<div class="section">
+  <h2>📦 Open Data 公開數據 オープンデータ</h2>
+  <p style="font-size:13px;color:var(--dim);margin-bottom:12px">All data is public. Clone the repo and explore. 全部數據公開，clone 就能用。全データ公開。</p>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>File 檔案</th><th>Content 內容</th><th>Updated 更新</th></tr></thead>
+    <tbody>
+      <tr><td style="color:var(--gold)">data/daily_report.json</td><td>每日三語報告（信號+預測+命中率）</td><td>Daily 每天</td></tr>
+      <tr><td style="color:var(--gold)">data/predictions_log.json</td><td>564 筆已驗證預測紀錄</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/surviving_rules.json</td><td>550 條存活規則（暴力搜索+進化）</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/trump_playbook.json</td><td>三套劇本（避險/佈局/拉盤）</td><td>Weekly 每週</td></tr>
+      <tr><td style="color:var(--gold)">data/signal_confidence.json</td><td>信號信心度（自動調整）</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/opus_analysis.json</td><td>Opus AI 深度分析結果</td><td>On demand</td></tr>
+      <tr><td style="color:var(--gold)">data/learning_report.json</td><td>學習引擎報告（升級/降級/淘汰）</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/evolution_log.json</td><td>規則進化紀錄（交配/突變/精煉）</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/circuit_breaker_state.json</td><td>斷路器狀態（系統健康+錯誤分析）</td><td>Daily</td></tr>
+      <tr><td style="color:var(--gold)">data/daily_features.json</td><td>414 天的完整特徵數據（384 個特徵）</td><td>Daily</td></tr>
+      <tr><td>data/market_SP500.json</td><td>S&P 500 歷史（open/close/high/low）</td><td>Daily</td></tr>
+      <tr><td>data/market_DOW/NASDAQ/VIX.json</td><td>道瓊/納斯達克/VIX 歷史</td><td>Daily</td></tr>
+      <tr><td>data/results_01~12_*.json</td><td>12 組分析結果（大寫/時間/隱藏/實體/異常/股市/信號/回測/評分/風格/暴力/大波動）</td><td>Static</td></tr>
+    </tbody>
+  </table>
   </div>
 </div>
 
