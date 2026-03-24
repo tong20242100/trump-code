@@ -1,21 +1,21 @@
-⚡ Trump Code | Flash — Oklahoma Lt. Gov. Endorsement
-
-**Signal: NEUTRAL | Confidence: LOW | Market Impact: NONE**
+⚡ Trump Code | Flash — Indiana State Endorsement, No Market Signal
 
 ## What He Said
 
-Trump endorsed T.W. Shannon for Lieutenant Governor of Oklahoma, highlighting Shannon's record as the youngest House Speaker in state history, National Chair of Black Voices for Trump, and former USDA appointee.
+Trump endorsed State Rep. Michelle Davis over incumbent "RINO" Sen. Greg Walker in Indiana's 41st State Senate District, attacking Walker for voting against redistricting — framing it as a threat to GOP congressional map advantage.
 
-## Why It Matters (It Doesn't — For Markets)
+## Why It Matters (Short Answer: It Doesn't — For Markets)
 
-This is a **routine downstream political endorsement** with zero direct market implications. Oklahoma's Lt. Governor race has no federal policy leverage, no regulatory footprint, and no budget authority that moves equities, bonds, or commodities.
+**Market impact: NONE.** This is a state-level primary endorsement with zero federal policy content. No tariffs, no Fed commentary, no trade war escalation, no fiscal policy signals.
 
-The only marginal read: Trump continues to **actively build his endorsement portfolio** ahead of 2026 midterms, reinforcing his grip on the GOP apparatus. This is political capital deployment, not economic signaling.
+The subtext is purely political: Trump is tightening grip on state-level GOP politics and using redistricting as leverage. This matters for **2026 midterm structural positioning** — not for anything trading today.
+
+Key context: Indiana is a deep-red state (Trump +33 pts in this district). This endorsement reshuffles local GOP power, not national policy.
 
 ## What to Watch
 
-- **Nothing actionable today.** No sector, ticker, or macro indicator is affected.
-- **Pattern tracking:** If endorsement frequency accelerates sharply, it may signal Trump is pivoting attention toward midterm cycle politics — which could *delay* focus on trade/tariff/fiscal policy moves traders actually care about.
-- **Oklahoma energy exposure:** State-level politics can occasionally affect oil & gas permitting sentiment, but a Lt. Gov. race is too far removed. **No OXY, DVN, or XOP signal here.**
+- **Nothing immediate.** No sector, commodity, or FX exposure.
+- **Longer-term political signal:** Trump actively policing state redistricting = he's focused on locking congressional seat margins. If this pattern scales (more state-level RINO attacks), it could signal confidence about 2026 House majority — mildly relevant for legislative risk pricing later.
+- **Ignore unless:** Follow-up posts pivot to federal policy (tariffs, debt ceiling, Fed). That's where the signal lives.
 
-**Bottom line:** File under political housekeeping. Resume normal positioning.
+**Bottom line:** File under political noise. Resume watching tariff and Fed headlines.
