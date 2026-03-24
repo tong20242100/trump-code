@@ -1,23 +1,21 @@
 ⚡ Trump Code | Flash — Indiana State Senator Endorsement
 
-**Signal: NEUTRAL | Confidence: LOW**
+**Signal: NEUTRAL | Confidence: LOW | Market Impact: NEGLIGIBLE**
 
 ## What He Said
 
-Trump endorsed Indiana State Senator Liz Brown (District 15), praising her as a "MAGA Warrior" and highlighting her work on tax cuts, deregulation, energy dominance, and immigration enforcement.
+Trump endorsed Indiana State Senator Tyler Johnson (R-14th District), praising him as an "America First Patriot" and emergency room physician, highlighting his work on tax cuts, deregulation, energy dominance, and border security.
 
-## Why It Matters (Short Answer: It Doesn't — For Markets)
+## Why It Matters (Or Doesn't)
 
-This is a **routine state-level political endorsement** with near-zero direct market impact. No policy announcement, no tariff signal, no federal legislation reference. The post reads as standard midterm positioning — rallying base support for a loyal state senator in Indiana.
+**This is a routine state-level political endorsement with near-zero direct market impact.** No new policy signals, no federal legislative action, no tariff or trade language. The post follows Trump's standard endorsement template — praise the candidate, list party-line priorities, rally the base.
 
-Key context: The language hits all standard MAGA talking points (energy dominance, Made in USA, migrant crime, cut taxes/regulations) but contains **no new policy signals**. These are recycled themes, not actionable catalysts.
+The only thematic takeaway: Trump continues to emphasize **energy dominance**, **Made in USA manufacturing**, and **tax/regulation cuts** as core messaging pillars. This is confirmation of existing posture, not a new direction.
 
-The post appears truncated ("Strengt—"), suggesting either a platform character limit issue or a multi-part post. The cut-off word is likely "Strengthen" — watch for the full version.
+## Watch List
 
-## What to Watch
+- **No immediate trades triggered.** State senate endorsements do not move indices, sectors, or commodities.
+- **Pattern tracking only:** If endorsement volume spikes across energy-state candidates (TX, PA, ND, IN), it may signal upcoming energy policy push — but this single post is insufficient evidence.
+- **Indiana-specific:** No publicly traded companies or pending state legislation flagged as material.
 
-- **Nothing immediate.** No sector rotation or volatility trigger here.
-- **Indiana-specific:** If Brown is positioned for a higher office bid (Governor, US Senate), future endorsements could matter for Indiana municipal bonds or state-level policy plays.
-- **Pattern recognition:** If Trump shifts from state endorsements back to tariff/trade posts today, that transition is the real signal.
-
-**Bottom line: File under political noise. Resume watching for tariff, Fed, or trade posts.**
+**Bottom line:** File under political housekeeping. Resume watching for tariff, Fed, or trade-deal posts — those move markets. This doesn't.
