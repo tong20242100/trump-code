@@ -25,7 +25,10 @@ sys.path.insert(0, str(Path.home() / "Projects" / "washin-llm"))
 # === 設定 ===
 RSS_URL = "https://www.trumpstruth.org/feed"
 POLL_INTERVAL = 30  # 秒
+X_POLL_MULTIPLIER = 10  # 每 10 輪 RSS 掃一次 X（= 5 分鐘，省 API credit）
+TRUMP_X_USER_ID = "25073877"  # @realDonaldTrump
 SEEN_FILE = Path(__file__).parent / "data" / "rss_seen_ids.json"
+X_SEEN_FILE = Path(__file__).parent / "data" / "x_seen_ids.json"
 LOG_FILE = Path(__file__).parent / "data" / "rss_watcher.log"
 LATENCY_LOG = Path(__file__).parent / "data" / "rss_latency_log.json"
 
@@ -100,11 +103,74 @@ def fetch_rss() -> list[dict]:
     return items, fetch_ms
 
 
+def fetch_x_timeline() -> tuple[list[dict], float]:
+    """抓川普 X 時間線，回傳推文列表。格式與 fetch_rss 一致。"""
+    import os as _os
+    from pathlib import Path as _Path
+
+    # 讀 Bearer token
+    env_path = _Path(__file__).parent / ".env"
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                _os.environ.setdefault(k.strip(), v.strip())
+
+    bearer = _os.environ.get("X_BEARER_TOKEN_TRUMPCODE", "")
+    if not bearer:
+        return [], 0
+
+    t0 = time.time()
+    url = (
+        f"https://api.x.com/2/users/{TRUMP_X_USER_ID}/tweets"
+        f"?max_results=10&tweet.fields=created_at,text,public_metrics"
+        f"&exclude=retweets,replies"
+    )
+    req = urllib.request.Request(url, headers={"Authorization": f"Bearer {bearer}"})
+
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read())
+    except Exception as e:
+        log(f"  ⚠️ X timeline 抓取失敗: {e}")
+        return [], (time.time() - t0) * 1000
+
+    fetch_ms = (time.time() - t0) * 1000
+    items = []
+    for tweet in data.get("data", []):
+        text = tweet.get("text", "")
+        # X 推文常常只有一個 URL（指向 Truth Social），跳過這種
+        if text.startswith("https://t.co/") and len(text) < 30:
+            continue
+        items.append({
+            "id": f"x_{tweet['id']}",  # 加 x_ 前綴避免跟 TS ID 撞
+            "guid": tweet["id"],
+            "content": text,
+            "pub_date": tweet.get("created_at", ""),
+            "original_url": f"https://x.com/realDonaldTrump/status/{tweet['id']}",
+            "fetched_at": datetime.now(timezone.utc).isoformat(),
+            "source": "x",  # 標記來源
+        })
+
+    return items, fetch_ms
+
+
 def load_seen() -> set:
-    """載入已看過的 ID。"""
+    """載入已看過的 ID（Truth Social）。"""
     if SEEN_FILE.exists():
         try:
             return set(json.load(open(SEEN_FILE)))
+        except:
+            pass
+    return set()
+
+
+def load_x_seen() -> set:
+    """載入已看過的 X 推文 ID。"""
+    if X_SEEN_FILE.exists():
+        try:
+            return set(json.load(open(X_SEEN_FILE)))
         except:
             pass
     return set()
@@ -114,6 +180,13 @@ def save_seen(seen: set):
     """存已看過的 ID（只保留最近 500 個）。"""
     recent = sorted(seen)[-500:]
     with open(SEEN_FILE, "w") as f:
+        json.dump(recent, f)
+
+
+def save_x_seen(seen: set):
+    """存已看過的 X 推文 ID。"""
+    recent = sorted(seen)[-200:]
+    with open(X_SEEN_FILE, "w") as f:
         json.dump(recent, f)
 
 
@@ -323,16 +396,21 @@ def _trigger_flash_article(post: dict, signals: list, direction: str, confidence
 
 # === 主程式 ===
 
-def run_once():
-    """跑一次掃描。"""
-    seen = load_seen()
-    initial_count = len(seen)
+_x_poll_counter = 0  # X 掃描計數器（每 X_POLL_MULTIPLIER 輪掃一次）
 
+
+def run_once():
+    """跑一次掃描（Truth Social RSS + 定期 X timeline）。"""
+    global _x_poll_counter
+    total_new = 0
+
+    # === Truth Social RSS（每輪都掃）===
+    seen = load_seen()
     try:
         items, fetch_ms = fetch_rss()
     except Exception as e:
         log(f"❌ RSS 抓取失敗: {e}")
-        return 0
+        return -1  # 負數表示 RSS 失敗
 
     new_posts = []
     for item in items:
@@ -341,23 +419,53 @@ def run_once():
             seen.add(item["id"])
 
     if new_posts:
-        log(f"📡 RSS 掃描: {len(items)} 篇, {len(new_posts)} 篇新的 ({fetch_ms:.0f}ms)")
+        log(f"📡 TS 掃描: {len(items)} 篇, {len(new_posts)} 篇新的 ({fetch_ms:.0f}ms)")
         for post in new_posts:
             on_new_post(post)
         save_seen(seen)
-    else:
-        # 靜默 — 沒新推文不刷 log（每 10 輪印一次心跳）
-        pass
+    total_new += len(new_posts)
 
-    return len(new_posts)
+    # === X Timeline（每 X_POLL_MULTIPLIER 輪掃一次 = 約 5 分鐘）===
+    _x_poll_counter += 1
+    if _x_poll_counter >= X_POLL_MULTIPLIER:
+        _x_poll_counter = 0
+        x_seen = load_x_seen()
+        try:
+            x_items, x_ms = fetch_x_timeline()
+
+            # 首次掃描：靜默初始化（不觸發 on_new_post）
+            if not x_seen and x_items:
+                for item in x_items:
+                    if item["id"]:
+                        x_seen.add(item["id"])
+                save_x_seen(x_seen)
+                log(f"📡 X 初始化: 已知 {len(x_seen)} 篇，開始監控新推文")
+            else:
+                x_new = []
+                for item in x_items:
+                    if item["id"] and item["id"] not in x_seen:
+                        x_new.append(item)
+                        x_seen.add(item["id"])
+
+                if x_new:
+                    log(f"📡 X 掃描: {len(x_items)} 篇, {len(x_new)} 篇新的 ({x_ms:.0f}ms)")
+                    for post in x_new:
+                        log(f"  🐦 X 新推文: {post['content'][:80]}")
+                        on_new_post(post)
+                    save_x_seen(x_seen)
+                    total_new += len(x_new)
+        except Exception as e:
+            log(f"  ⚠️ X 掃描失敗: {e}")
+
+    return total_new
 
 
 def run_loop():
-    """持續監控。"""
+    """持續監控（Truth Social + X 雙源）。"""
     log("=" * 55)
-    log("🔴 Trump RSS 高頻監控器")
-    log(f"   來源: {RSS_URL}")
-    log(f"   間隔: {POLL_INTERVAL} 秒")
+    log("🔴 Trump 雙源監控器（TS + X）")
+    log(f"   Truth Social: {RSS_URL} (每 {POLL_INTERVAL}s)")
+    log(f"   X Timeline: @realDonaldTrump (每 {POLL_INTERVAL * X_POLL_MULTIPLIER}s)")
     log("=" * 55)
 
     # 第一次掃描：初始化已看過的 ID（不觸發 on_new_post）
@@ -439,7 +547,9 @@ def run_loop():
         try:
             new_count = run_once()
             if new_count >= 0:
-                consecutive_rss_fails = 0  # RSS 成功，重置計數
+                consecutive_rss_fails = 0
+            else:
+                consecutive_rss_fails += 1
             heartbeat += 1
 
             # 每 10 輪（5 分鐘）印一次心跳
