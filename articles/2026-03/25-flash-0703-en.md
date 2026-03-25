@@ -1,5 +1,5 @@
 ⚡ Trump Code | Flash
 
-**Trump Endorses Van Epps in TN-7**
+**BREAKING: Trump Endorses Local TN-7 Candidate**
 
-Former President Trump just issued a direct endorsement for "MAGA Warrior" Matt Van Epps in Tennessee
+Former President Trump just issued an urgent call for "America First Patriots" in Tennessee
