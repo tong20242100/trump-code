@@ -102,6 +102,32 @@ def _oauth_header(method: str, url: str, body_params: dict = None) -> str:
     return f"OAuth {auth_str}"
 
 
+# === 發推速率限制 ===
+# 血的教訓：2026-03-25 測試時 2 分鐘發 24 則 → 帳號被停
+_tweet_timestamps = []  # 記錄最近發推的時間戳
+_RATE_LIMIT_PER_HOUR = 15  # 每小時最多 15 則（含 Thread 回覆）
+_RATE_LIMIT_PER_MIN = 3    # 每分鐘最多 3 則
+
+
+def _check_rate_limit():
+    """檢查是否超過發推速率。超過回傳錯誤訊息，正常回傳 None。"""
+    now = time.time()
+    # 清掉 1 小時前的記錄
+    while _tweet_timestamps and _tweet_timestamps[0] < now - 3600:
+        _tweet_timestamps.pop(0)
+
+    # 每小時限制
+    if len(_tweet_timestamps) >= _RATE_LIMIT_PER_HOUR:
+        return f"速率限制：每小時最多 {_RATE_LIMIT_PER_HOUR} 則（目前 {len(_tweet_timestamps)} 則）"
+
+    # 每分鐘限制
+    recent_1min = sum(1 for t in _tweet_timestamps if t > now - 60)
+    if recent_1min >= _RATE_LIMIT_PER_MIN:
+        return f"速率限制：每分鐘最多 {_RATE_LIMIT_PER_MIN} 則（目前 {recent_1min} 則）"
+
+    return None
+
+
 # === 發推 ===
 
 def post_tweet(text: str, reply_to: str = None) -> dict:
@@ -117,6 +143,11 @@ def post_tweet(text: str, reply_to: str = None) -> dict:
     """
     if not all([API_KEY, API_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET]):
         return {"ok": False, "error": "X API key 未設定（檢查 .env）"}
+
+    # 速率保護（防止再被停號）
+    rate_err = _check_rate_limit()
+    if rate_err:
+        return {"ok": False, "error": rate_err}
 
     # X API v2 發推 endpoint
     url = "https://api.x.com/2/tweets"
@@ -141,6 +172,7 @@ def post_tweet(text: str, reply_to: str = None) -> dict:
         with urllib.request.urlopen(req, timeout=15) as resp:
             data = json.loads(resp.read())
             tweet_id = data.get("data", {}).get("id", "")
+            _tweet_timestamps.append(time.time())  # 記錄成功發推時間
             return {
                 "ok": True,
                 "tweet_id": tweet_id,
