@@ -1,26 +1,26 @@
-⚡ Trump Code | Flash — Housing Deregulation Play
+⚡ Trump Code | Flash — FBI Surveillance Docs Leak
 
-**Signal: RELIEF + ACTION | Direction: UP (55%)**
+**Signal: NEUTRAL | Confidence: Low**
 
 ## What He Said
 
-Trump admin is moving to streamline building permits and cut costs to make homeownership more accessible — a regulatory easing signal aimed squarely at the housing affordability crisis.
+Trump shared a report claiming newly exposed documents reveal expansive FBI surveillance of his allies, suggesting possible illegality — framing it as a politically motivated "fishing expedition."
 
 ## Why It Matters
 
-This is a **supply-side housing play**. Simplified permitting = faster construction timelines = more housing units hitting the market. The causal chain is clear: lower regulatory friction reduces builder costs, which theoretically compresses home prices or at least slows their climb.
+This is **political narrative warfare**, not a policy signal. Trump is reinforcing the "weaponized government" theme ahead of potential 2026 midterm positioning. For markets, the direct impact is **near-zero** — no executive order, no tariff, no personnel change.
 
-**However, confidence sits at only 55% for a reason.** This is directional intent, not a signed executive order. No specific agency actions, no timeline, no budget allocation disclosed. Markets have seen "streamlining" promises before — execution is everything.
+However, traders should note the **second-order risk**: if this escalates into demands for FBI/DOJ leadership purges or budget threats, it could rattle institutional stability sentiment. The pattern is familiar — Trump tests messaging, gauges response, then acts if traction builds.
 
-**Winners if real:** Homebuilders (DHI, LEN, PHM), building materials (VMC, MLM), housing-related ETFs (XHB, ITB). Regional banks with heavy mortgage exposure also catch a bid.
+**No immediate legislative or regulatory action is implied.**
 
-**Losers if real:** Existing home sellers lose pricing power if new supply floods in. REITs focused on scarcity-driven rent growth could see pressure.
+## What to Watch
 
-## Watch List
+- **VIX**: No expected move from this alone. Flag only if paired with concrete DOJ action within 48h
+- **Defense/Gov contractors** (GD, LMT, BAH): Sensitive to federal agency disruption narratives — monitor for unusual volume
+- **USD/Gold**: Only relevant if this escalates to an actual DOJ shakeup or AG directive
+- **Trump Media (DJT)**: May see retail momentum on base engagement — watch pre-market volume
 
-- **XHB/ITB** price action in the next 2-4 hours for immediate sentiment read
-- **Building permits data** (next Census release) for any early policy footprint
-- **Fed commentary** — rate trajectory still dominates housing more than permits
-- Any **executive order or agency memo** that converts talk into action
+## Bottom Line
 
-**Bottom line:** Bullish narrative for builders, but this is a press headline, not policy yet. Trade the sector sympathy, not the conviction.
+Political theater, not market catalyst — **file under noise unless escalation follows within 48 hours.** The real triggers this week remain tariff policy and Fed commentary.
