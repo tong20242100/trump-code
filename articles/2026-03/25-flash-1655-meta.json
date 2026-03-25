@@ -1,0 +1,33 @@
+{
+  "type": "flash",
+  "date": "2026-03-25",
+  "generated_at": "2026-03-25T16:55:34.477077+00:00",
+  "post_id": "116290852675177057",
+  "post_content": "We are asking for expedited Judicial Review because they are robbing our Country blind, “Centers” that don’t exist are being paid tremendous amounts of money, and yet we have Court Orders not letting ",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116290852675177057",
+  "post_source": "Truth Social",
+  "post_time": "Wed, 25 Mar 2026 16:53:10 +0000",
+  "signals": "",
+  "direction": "NEUTRAL",
+  "confidence": 0.0,
+  "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
+  "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
+  "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
+  "articles": {
+    "zh": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-1655-zh.md",
+      "length": 403
+    },
+    "en": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-1655-en.md",
+      "length": 625
+    },
+    "ja": {
+      "status": "ok",
+      "path": "/Users/tkman/Projects/trump-code/articles/2026-03/25-flash-1655-ja.md",
+      "length": 446
+    }
+  }
+}
