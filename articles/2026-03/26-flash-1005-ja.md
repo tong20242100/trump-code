@@ -1,23 +1,23 @@
 ⚡ トランプ・コード｜速報
 
-## 空港混乱の責任は民主党――トランプ氏、州兵投入を示唆
+## 移民政策で民主党を牽制──市場への直接影響は限定的
 
-トランプ大統領がTruth Socialで民主党を痛烈に批判。「They broke the already signed Bill because they want to take care of Criminals who enter our Country illegally」（署名済み法案を破棄し、不法入国の犯罪者を優先した）と断じ、「I may call up the National Guard for more help」と**州兵動員の可能性**に言及した。
+トランプ大統領がTruth Socialで民主党の移民政策を痛烈に批判。「Democrats don't want to make any deal unless Amnesty and Citizenship is given to millions of Criminals」と投稿し、不法移民への恩赦・市民権付与を求める民主党との交渉決裂を示唆した。
 
-**シグナル：DEAL（UP方向・信頼度65%）。** 移民強硬策略の escalation は国境警備・防衛関連銘柄にプラス材料となる一方、空港混乱の長期化は航空・旅行セクターの重荷になり得る。
+**シグナル判定：NEUTRAL（信心度 0%）**──今回は関税・財政政策ではなく移民問題のため、日経平均・ドル円への直接的インパクトは薄い。ただし、議会との対立激化は予算審議や政府閉鎖リスクに波及する可能性がある。
 
 **注目ポイント：**
-- **ドル円**：リスクオン/オフの振れに注意（現水準からの±0.5円幅）
-- **防衛関連ETF・国境警備銘柄**の反応（米市場オープン後1時間）
-- 州兵動員が正式発表されるか（今後24-48時間）
+- 米議会の予算協議の進展状況
+- 政府閉鎖（シャットダウン）リスクの再燃有無
+- ドル円143円台の攻防と日経先物の反応
 
-信頼度65%はやや控えめ――政治的レトリックに留まる可能性もあり、実行に移るかを見極めたい。
+移民単体では市場は動きにくいが、「交渉決裂→議会膠着→予算停滞」の連鎖シナリオには警戒を。
 
 ---
 **📋 出典・分析手法**
 - 原文：Truth Social
-- リンク：https://truthsocial.com/@realDonaldTrump/116294906575864350
-- 投稿日時：Thu, 26 Mar 2026 10:04:08 +0000
+- リンク：https://truthsocial.com/@realDonaldTrump/116294905762243060
+- 投稿日時：Thu, 26 Mar 2026 10:03:56 +0000
 - 分析エンジン：Trump Code AI（Claude Opus / Gemini Flash）
 - シグナル検出：7,400件以上の投稿から検証済み551ルール（z=5.39）
 - 手法：NLPキーワード分類 → LLM因果推論 → 信頼度スコアリング

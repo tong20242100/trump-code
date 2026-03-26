@@ -1,20 +1,20 @@
 ⚡ 川普密碼｜即時快報
 
-## 機場亂局成政治籌碼，川普暗示動用國民兵
+## 移民攻防再起火，川普硬槓民主黨
 
-川普剛在 Truth Social 轉發貼文，矛頭直指民主黨：「They broke the already signed Bill because they want to take care of Criminals who enter our Country illegally, rather than American citizens.」（他們撕毀已簽署的法案，只為照顧非法入境的罪犯，而非美國公民。）
+川普剛在 Truth Social 轉發自己的貼文，猛批民主黨在移民議題上的立場：「Democrats don't want to make any deal unless Amnesty and Citizenship is given to millions of Criminals who have entered our Country illegally」，並以大寫「PROTECT AMERICA!」作結。
 
-更關鍵的一句：「I may call up the National Guard for more help.」——他正在考慮動用國民兵介入機場混亂。
+**這則為什麼是中性訊號？** 移民議題屬於川普的「老戰場」，是政治動員語言而非政策轉向。沒有提到關稅、貿易、Fed、或任何直接牽動資金流向的關鍵字。信號偵測結果為 **NEUTRAL，信心度 0%**——代表系統判定這則對盤面沒有明確方向性影響。
 
-**為什麼重要？** 系統偵測到 **DEAL 信號，方向 UP，信心度 65%**。這則貼文表面是罵民主黨，實質是在為邊境法案談判加壓。川普把機場問題、ICE 執法、國民兵三張牌綁在一起，逼國會回到談判桌。這種「先製造壓力再談條件」的模式，過去常伴隨政策交易推進，對市場偏正面。
+**但仍值得留意一件事：** 當川普密集發移民相關推文時，通常代表他正在為國會談判施壓。如果後續幾小時內出現與政府預算或撥款法案掛鉤的移民條件，那情況就不同了——政府關門風險會直接衝擊美債與美元。
 
-**建議關注：** 未來 24-48 小時留意國會是否重啟法案協商、國民兵是否實際部署，以及 S&P 500 和邊境安全概念股（如私營監獄 GEO、CoreCivic）的反應。信心度未破 70%，波動有限，觀察為主。
+**建議關注：** 未來 24 小時是否出現預算/撥款相關推文，以及國會兩黨談判動態。目前不需要動作，但保持警覺。
 
 ---
 **📋 出處與方法**
 - 原文來源：Truth Social
-- 原文連結：https://truthsocial.com/@realDonaldTrump/116294906575864350
-- 發文時間：Thu, 26 Mar 2026 10:04:08 +0000
+- 原文連結：https://truthsocial.com/@realDonaldTrump/116294905762243060
+- 發文時間：Thu, 26 Mar 2026 10:03:56 +0000
 - 分析引擎：Trump Code AI（Claude Opus / Gemini Flash）
 - 信號偵測：基於 7,400+ 篇推文訓練的 551 條規則，z=5.39
 - 分析方法：NLP 關鍵字分類 → LLM 因果推理 → 信心度評分

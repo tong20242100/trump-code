@@ -1,37 +1,30 @@
-⚡ Trump Code | Flash — National Guard Threat Over Airport Chaos
-
-**Signal: DEAL | Direction: UP | Confidence: 65%**
+⚡ Trump Code | Flash — Immigration Hardline Rhetoric, No Market Catalyst
 
 ## What He Said
 
-Trump fired off a combative post blaming Democrats for disrupting airport operations: *"Blame the Democrats for the Airport's mess. They broke the already signed Bill because they want to take care of Criminals who enter our Country illegally, rather than American citizens."*
+President Trump reposted his own statement on Truth Social attacking Democrats over immigration negotiations: **"The Democrats don't want to make any deal unless Amnesty and Citizenship is given to millions of Criminals who have entered our Country illegally."** The post closes with **"PROTECT AMERICA!"** — a familiar rally-style framing.
 
-The escalation kicker: *"I may call up the National Guard for more help."*
+## Signal Detection
 
-## Why It Matters
+Our NLP pipeline (551 validated rules, z=5.39) flagged this as **NEUTRAL** with **0% confidence** on directional market impact. This is consistent: the post contains zero trade, tariff, Fed, or fiscal policy language. Pure immigration rhetoric with no new policy announcement or executive action signal.
 
-This is a **DEAL signal** — Trump is framing a broken legislative agreement and signaling executive action. Three market-relevant threads:
+## Why It Matters (Minimally)
 
-1. **National Guard deployment** = federal spending uptick + defense/security sector tailwind. Watch **$GD, $LMT, $AXON**.
-2. **"Broke the already signed Bill"** = bipartisan deal collapse. Budget uncertainty rises. Bond traders should watch **10Y yield** for risk-off moves.
-3. **Immigration enforcement escalation** (ICE praise + Guard threat) = labor market tightening signal in agriculture, construction, hospitality. Watch **wage data** and sector ETFs.
-
-65% UP confidence reflects the pattern: Trump executive-action rhetoric historically correlates with short-term equity pops in defense/border-security names, but legislative gridlock caps broader index upside.
+This is political positioning, not market-moving policy. No mention of border legislation tied to government funding, no shutdown threat, no executive order preview. For traders, this is **noise, not signal**. Immigration posts historically show near-zero correlation with S&P 500, Treasury, or USD moves within the 4-hour window.
 
 ## Watch List
 
-- **Next 4 hours**: White House press briefing for Guard activation details
-- **$AXON, $LMT, $GD**: defense/security names on volume spikes
-- **Airlines ($AAL, $DAL)**: airport disruption = operational cost drag
-- **DXY**: USD strength if enforcement = hawkish fiscal signal
+- **Government shutdown risk**: Only relevant if immigration demands get linked to upcoming spending bills. Monitor Congressional calendar.
+- **USD/MXN**: Stable unless rhetoric escalates to deportation operations or border closure language. Current range holds.
+- **Legislative tracker**: No active bill referenced. No vote scheduled.
 
-*NLP classification: 551 validated rules, z=5.39. LLM causal reasoning applied.*
+**Bottom line**: File under political theater. No position adjustment warranted. Resume watching for tariff, Fed, or fiscal posts — those are the ones that move markets.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116294906575864350
-- Posted: Thu, 26 Mar 2026 10:04:08 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116294905762243060
+- Posted: Thu, 26 Mar 2026 10:03:56 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
