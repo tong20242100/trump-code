@@ -1,21 +1,18 @@
-⚡ トランプ・コード｜速報：出生地主義を「史上最大の詐欺」と再攻撃
+⚡ トランプ・コード｜速報：保険業界へ砲撃――State Farm名指し批判
 
-トランプ大統領がTruth Socialで出生地主義（Birthright Citizenship）を再び標的にした。「Birthright Citizenship has to do with the babies of slaves, not Chinese Billionaires who have 56 kids」と投稿し、現行制度を「One of the many Great Scams of our time!」と断じた。
+**【発言要旨】** トランプ大統領はカリフォルニア山火事の被災者代表と面会後、保険会社を痛烈に批判。「Insurance Companies, in particular, State Farm, have been absolutely horrible to people」と述べ、長年高額保険料を支払ってきた被災者への対応を「horrendous」と断じた。さらにEPA（環境保護庁）長官への指示を示唆し、行政介入の構えを見せた。
 
-**シグナル判定：NEUTRAL（信心度 0%）**——NLP分類では市場方向性の明確なシグナルは検出されず。移民政策の政治的発言であり、関税・金融政策への直接波及は限定的と分析。
+**【シグナル検出】** ACTION＋THREAT（信頼度30%・NEUTRAL）。個別企業への名指し攻撃だが、マクロ市場への波及は限定的と判定。
 
-ただし油断は禁物。出生地主義の議論は**憲法修正第14条**に関わり、法廷闘争が再燃すれば政治リスクプレミアムとして意識される可能性がある。また「Chinese Billionaires」という表現は**米中関係の温度感**を測る材料になる。
+**【なぜ重要か】** State Farmは全米最大の住宅保険会社。大統領の公開批判は規制強化・行政命令につながる前例がある。保険セクターETF（KIE）や損保株への短期売り圧力に注意。ただし日経平均・ドル円への直接的影響は薄い。
 
-**注目ポイント：**
-- ドル円：政治リスク織り込みで円高圧力が出るか（現水準から±0.5円の動きに注意）
-- 日経先物：夜間取引での反応を確認
-- 今後48時間以内に関連する大統領令や政策発表がないかをウォッチ
+**【注目ポイント】** ①KIE（SPDR保険ETF）の翌営業日の値動き ②EPA関連の行政命令の続報 ③State Farm株主向けIR発表の有無。カリフォルニア関連の規制議論が拡大すれば、再保険市場経由で東京海上HDなど日本損保株にも間接的に波及する可能性あり。
 
 ---
 **📋 出典・分析手法**
 - 原文：Truth Social
-- リンク：https://truthsocial.com/@realDonaldTrump/116325785902961629
-- 投稿日時：Tue, 31 Mar 2026 20:57:09 +0000
+- リンク：https://truthsocial.com/@realDonaldTrump/116325677707554016
+- 投稿日時：Tue, 31 Mar 2026 20:29:38 +0000
 - 分析エンジン：Trump Code AI（Claude Opus / Gemini Flash）
 - シグナル検出：7,400件以上の投稿から検証済み551ルール（z=5.39）
 - 手法：NLPキーワード分類 → LLM因果推論 → 信頼度スコアリング
