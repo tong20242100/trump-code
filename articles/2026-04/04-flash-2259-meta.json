@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:59:04.998459+00:00",
-  "post_id": "116336001721515418",
-  "post_content": "",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116336001721515418",
+  "generated_at": "2026-04-04T22:59:11.598151+00:00",
+  "post_id": "116335602592937497",
+  "post_content": "Thank you to all of our Great Congressional Republicans, House Speaker Mike Johnson, and Senate Leader John Thune, for their work this week. Republicans are UNIFIED, and moving forward on a plan that ",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116335602592937497",
   "post_source": "Truth Social",
-  "post_time": "Thu, 02 Apr 2026 16:15:10 +0000",
+  "post_time": "Thu, 02 Apr 2026 14:33:40 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-zh.md",
-      "length": 764
+      "length": 904
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-en.md",
-      "length": 1037
+      "length": 2334
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2259-ja.md",
-      "length": 472
+      "length": 939
     }
   }
 }

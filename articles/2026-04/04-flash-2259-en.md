@@ -1,30 +1,33 @@
-⚡ Trump Code | Flash — 空白貼文異常信號
+⚡ Trump Code | Flash — GOP Budget Unity Signal, Border Funding Push
 
-## 川普說了什麼
+**Signal: NEUTRAL | Confidence: 0%**
 
-本則 Truth Social 貼文（2026-04-02 16:15 UTC）**內容為空白**——沒有文字、沒有圖片、沒有連結。原文關鍵句：「（無內容）」。這可能是：(1) 誤觸發佈、(2) 已刪除/編輯後的殘留、(3) 平台抓取時內容尚未載入。
+## What He Said
 
-## 信號偵測結果
+Trump praised congressional Republicans for rallying behind a spending plan, posting: **"Republicans are UNIFIED, and moving forward on a plan that will reload funding for our FANTASTIC Border Patrol and Immigration Enforcement Officers."** He framed Democrats as committed to **"Radical Left Policy of Open Borders and Zero Immigration Enforcement,"** predicting it will **"cost them dearly in the Midterms."**
 
-NLP 分類器判定方向：**NEUTRAL**，信心度 **0%**——這是系統對「無可分析內容」的正確反應。551 條驗證規則無一觸發，z-score 5.39 僅反映模型統計穩定性，不代表方向性判斷。
+## Why It Matters
 
-## 為什麼仍值得注意
+This is a **party-discipline post**, not a policy bombshell. Trump is publicly blessing Speaker Johnson and Leader Thune's budget work — signaling the GOP reconciliation bill is on track, not stalling. Key market read:
 
-川普近期密集發文（同日至少 5 則），一則空白貼文本身不構成市場信號。但若此貼文隨後被**編輯補上內容**（Truth Social 支援編輯功能），則可能是延遲發佈的政策聲明。Traders 應留意：
+- **No new tariff threat, no trade escalation** — pure domestic politics, hence the 0% confidence neutral signal.
+- **Budget/spending implications**: "Reload funding" suggests supplemental border appropriations are being folded into the broader reconciliation package. This could affect the deficit trajectory and Treasury issuance timeline.
+- **Midterm framing** already in April 2026 tells you immigration will be the GOP's wedge issue through November.
 
-## 建議關注
+## What to Watch
 
-- **未來 1-2 小時**：監控該貼文是否被編輯或刪除
-- **同時段其他貼文**：同日其他 5 則貼文已標記為 NEUTRAL，整體無明確政策轉向
-- **指標**：S&P 500 futures、DXY、10Y yield 目前無需因此單則調整部位
+1. **House reconciliation bill text** — expected within days. Watch for total border spending number (FY2025 was ~$25B for CBP/ICE).
+2. **Treasury auction calendar** — any increase in projected borrowing tied to expanded enforcement spending.
+3. **GEO Group (GEO) / CoreCivic (CXW)** — private prison stocks tend to move on border enforcement rhetoric; monitor for momentum trades.
+4. **USD/MXN** — stable for now, but escalation language in follow-up posts could shift flows.
 
-**結論：無需行動，持續監控。**
+**Bottom line**: Rally-the-base messaging, not a market mover — unless a follow-up post pivots to tariffs or shutdown threats.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116336001721515418
-- Posted: Thu, 02 Apr 2026 16:15:10 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116335602592937497
+- Posted: Thu, 02 Apr 2026 14:33:40 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
