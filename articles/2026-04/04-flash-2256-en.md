@@ -1,28 +1,31 @@
-⚡ Trump Code | Flash — Easter Faith Signal, Markets Unmoved
+⚡ Trump Code | Flash — Easter Message: Faith Signal, No Policy Catalyst
 
-**What He Said:**
-Trump shared a repost on Truth Social: *"Believers and people of faith find safe harbor in Trump's White House this Easter."* A holiday-themed message positioning the White House as a refuge for religious communities.
+**Signal: NEUTRAL | Confidence: 0%**
 
-**Signal Detection:** NEUTRAL — Confidence 0%. NLP keyword classification (551 validated rules, z=5.39) found no economic, trade, or policy triggers. LLM causal reasoning confirmed: this is a cultural/religious statement with no actionable market content.
+## What He Said
 
-**Why It Matters (Briefly):**
-It doesn't — for markets. No tariff language, no Fed commentary, no sector callouts. This is base-maintenance messaging ahead of Easter weekend, reinforcing evangelical coalition loyalty. The 0% confidence score reflects the system's correct assessment that zero tradeable information is embedded.
+Trump posted on Truth Social: **"Believers and people of faith find safe harbor in Trump's White House this Easter."** A holiday message framing the White House as a sanctuary for religious communities.
 
-**Context Check:**
-Easter weekend means thin liquidity Monday (EU markets closed). Any *actual* policy post dropped during this window would have outsized impact precisely because desks are light. This post is not that — but the window remains open.
+## Why It Matters
 
-**What to Watch:**
-- **Sunday-Monday Truth Social activity** — holiday weekends have historically been when Trump drops tariff or trade surprises into low-liquidity conditions
-- **S&P 500 futures** at Asia open (Sun 6PM ET) for any weekend gap
-- **USD/CNH** if any China-related post follows — the pattern of "soft post → hard post" within 24h has occurred 3 times in 2026
+This is a **cultural positioning statement**, not a policy signal. No tariff threats, no Fed commentary, no trade war escalation. The timing — Easter Saturday — is consistent with seasonal messaging to his evangelical base.
 
-**Bottom Line:** File under noise. Keep alerts on for the next 48 hours — the quiet posts are not the ones that move markets, but they often precede the ones that do.
+**Market impact: Near zero.** No actionable catalyst for equities, bonds, or FX. The NLP classifier flagged NEUTRAL with **0% confidence**, meaning the system found no directional keywords from its 551-rule validation set (z=5.39). This is the correct read — the post contains no economic, trade, or geopolitical content.
+
+## What to Watch
+
+- **Not this post.** The risk is what comes *next*. Trump frequently clusters soft posts before policy announcements. Easter weekend provides cover for Sunday/Monday surprises.
+- **Sunday night / Monday pre-market**: Watch for follow-up posts on tariffs (China 145% retaliation cycle), Fed Chair Powell criticism, or reciprocal trade moves.
+- **S&P 500 futures** open Sunday 6pm ET — first liquidity test after a holiday weekend of potential policy drops.
+- **USD/CNH** and **10Y Treasury yields** remain the canaries if trade rhetoric resumes.
+
+**Bottom line:** File this under base maintenance, not market mover. Stay alert for the next post — Easter quiet rarely lasts.
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116346607507796836
-- Posted: Sat, 04 Apr 2026 13:12:22 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116344282496536118
+- Posted: Sat, 04 Apr 2026 03:21:05 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
