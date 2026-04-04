@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:55:06.291672+00:00",
-  "post_id": "116348197506760486",
+  "generated_at": "2026-04-04T22:55:13.554279+00:00",
+  "post_id": "116348196909217775",
   "post_content": "",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116348197506760486",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116348196909217775",
   "post_source": "Truth Social",
-  "post_time": "Sat, 04 Apr 2026 19:56:43 +0000",
+  "post_time": "Sat, 04 Apr 2026 19:56:34 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-zh.md",
-      "length": 755
+      "length": 434
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-en.md",
-      "length": 982
+      "length": 1023
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2255-ja.md",
-      "length": 773
+      "length": 466
     }
   }
 }
