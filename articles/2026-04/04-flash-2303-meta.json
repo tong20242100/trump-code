@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T23:03:41.170686+00:00",
-  "post_id": "116323992527197622",
-  "post_content": "Melania and I are pleased to announce that Their Majesties, the King and Queen of the United Kingdom, will visit the United States for a Historic State Visit from April 27-30th, which will include a b",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116323992527197622",
+  "generated_at": "2026-04-04T23:03:50.363196+00:00",
+  "post_id": "116323969849989366",
+  "post_content": "Netanyahu to Newsmax: Trump Has Shown 'Tremendous Leadership':",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116323969849989366",
   "post_source": "Truth Social",
-  "post_time": "Tue, 31 Mar 2026 13:21:04 +0000",
+  "post_time": "Tue, 31 Mar 2026 13:15:18 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2303-zh.md",
-      "length": 805
+      "length": 838
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2303-en.md",
-      "length": 2096
+      "length": 2160
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2303-ja.md",
-      "length": 899
+      "length": 833
     }
   }
 }
