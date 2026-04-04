@@ -1,20 +1,25 @@
 ⚡ 川普密碼｜即時快報
 
-## 川普再打「挺警察」牌，民主黨成靶心
+## 川普再槓出生公民權，移民議題持續升溫
 
-川普在 Truth Social 發文力挺執法體系，用詞從「支持」直接升級到「LOVE」——「Republicans fully support our Great Men and Women of Law Enforcement, maybe the word should be, LOVE!」同時猛攻民主黨要「DEFUND the Police, Border Patrol, and all Immigration Enforcement」，把對手框定為放任犯罪的一方。
+川普在 Truth Social 發文猛批：「We are the only Country in the World STUPID enough to allow 'Birthright' Citizenship!」——直接用「STUPID」形容美國的出生公民權政策，火力全開。
 
-**市場影響：中性偏低。** 信號偵測結果為 NEUTRAL，信心度僅 0%，代表這則貼文不含直接的政策行動或經濟訊號。這是標準的選戰話術操作——拉攏執法票倉、製造對立，短期內不會觸發關稅、財政或貨幣政策的變動。
+**為什麼重要？** 出生公民權是憲法第十四修正案保障的權利，川普多次揚言要以行政命令廢除，但法律上極具爭議。這則發文時間點值得注意——正值國會討論移民法案之際，川普再度拋出這個議題，明顯是在施壓國會往更強硬的方向走。
 
-不過要留意一個暗線：川普密集提及 ICE 和邊境巡邏，若後續升級為具體的移民執法行政命令，私營監獄股（GEO Group、CoreCivic）和邊境安全概念股可能有波動。
+信號偵測結果為 **NEUTRAL（信心度 0%）**，代表這則發文屬於政治宣示性質，沒有直接觸發關稅、財政或貨幣政策的關鍵字，短期內對金融市場的直接衝擊有限。
 
-**建議關注：** 未來 48 小時內是否出現移民相關行政令簽署消息，以及國會對執法預算的表態。目前無需動作，持續觀察即可。
+**建議關注：**
+- 移民相關類股（私營監獄 GEO、CXW）是否出現異動
+- 國會移民法案進度，若真的推動修憲討論，政治風險將大幅升級
+- 川普後續是否從移民議題連結到經濟政策（如「移民搶工作」→勞動市場→Fed 決策），那才是市場真正要緊張的時候
+
+現階段：聽其言、觀其行，不急著動。
 
 ---
 **📋 出處與方法**
 - 原文來源：Truth Social
-- 原文連結：https://truthsocial.com/@realDonaldTrump/116330487356155648
-- 發文時間：Wed, 01 Apr 2026 16:52:48 +0000
+- 原文連結：https://truthsocial.com/@realDonaldTrump/116330362125395500
+- 發文時間：Wed, 01 Apr 2026 16:20:57 +0000
 - 分析引擎：Trump Code AI（Claude Opus / Gemini Flash）
 - 信號偵測：基於 7,400+ 篇推文訓練的 551 條規則，z=5.39
 - 分析方法：NLP 關鍵字分類 → LLM 因果推理 → 信心度評分
