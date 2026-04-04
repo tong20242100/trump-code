@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:57:26.707925+00:00",
-  "post_id": "116340751005894827",
-  "post_content": "With a little more time, we can easily OPEN THE HORMUZ STRAIT, TAKE THE OIL, &amp; MAKE A FORTUNE. IT WOULD BE A “GUSHER” FOR THE WORLD??? President DONALD J. TRUMP",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116340751005894827",
+  "generated_at": "2026-04-04T22:57:40.355802+00:00",
+  "post_id": "116340682613576162",
+  "post_content": "Vice President JD Vance is now in charge of “FRAUD” in the United States. It is massive and pervasive, and the job he will be doing, in conjunction with many great people within the Trump Administrati",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116340682613576162",
   "post_source": "Truth Social",
-  "post_time": "Fri, 03 Apr 2026 12:22:58 +0000",
-  "signals": "THREAT, BULLISH, ACTION",
+  "post_time": "Fri, 03 Apr 2026 12:05:35 +0000",
+  "signals": "ACTION",
   "direction": "UP",
-  "confidence": 0.5,
+  "confidence": 0.3,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-zh.md",
-      "length": 921
+      "length": 818
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-en.md",
-      "length": 1165
+      "length": 2293
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-ja.md",
-      "length": 864
+      "length": 915
     }
   }
 }
