@@ -1,12 +1,12 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:56:01.665714+00:00",
-  "post_id": "116346654846871260",
-  "post_content": "The Failing New York Times, whose lack of credibility, and their constant Fake News attacks on your favorite President, ME, has caused its circulation to absolutely PLUMMET, referred to our severely w",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116346654846871260",
+  "generated_at": "2026-04-04T22:56:09.532361+00:00",
+  "post_id": "116346607507796836",
+  "post_content": "RT @realDonaldTrumpBelievers and people of faith find safe harbor in Trump's White House this Easter:",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116346607507796836",
   "post_source": "Truth Social",
-  "post_time": "Sat, 04 Apr 2026 13:24:24 +0000",
+  "post_time": "Sat, 04 Apr 2026 13:12:22 +0000",
   "signals": "",
   "direction": "NEUTRAL",
   "confidence": 0.0,
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-zh.md",
-      "length": 915
+      "length": 787
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-en.md",
-      "length": 2277
+      "length": 2154
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2256-ja.md",
-      "length": 886
+      "length": 819
     }
   }
 }
