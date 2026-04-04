@@ -1,34 +1,28 @@
-⚡ Trump Code | Flash — 空白貼文，信號歸零
+⚡ Trump Code | Flash — Empty Post Detected on Truth Social
 
-**Signal: NEUTRAL | Confidence: 0%**
+## What Happened
 
-## 川普說了什麼
+Trump published a post on Truth Social (Apr 4, 2026, 19:56 UTC) with **no visible text content**. The post at `truthsocial.com/@realDonaldTrump/116348196297044208` appears to be either a blank post, a deleted/edited post captured mid-transit, or a media-only post (image/video) whose content was not extracted by our text pipeline.
 
-川普於 UTC 2026-04-04 19:56 在 Truth Social 發出一則**無內容貼文**——貼文本體為空白，無文字、無圖片、無連結。
+**Signal detection: NEUTRAL | Confidence: 0%** — The NLP classifier (551 rules, z=5.39) found zero keyword matches, and the LLM causal reasoning layer had no text to evaluate, producing a null confidence score.
 
-## 為什麼重要
+## Why It Matters
 
-空白貼文本身不構成政策信號，NLP 分類器在 551 條規則中無法匹配任何關鍵字，信心度歸零（0%）。LLM 因果推理層同樣無法從空內容中提取市場意涵。
+Empty or near-empty posts from Trump's account have historically preceded one of two scenarios: **(1)** a rapid follow-up post containing the intended message (often within minutes), or **(2)** a media attachment (image, video, or link preview) that carries the actual signal. Traders should treat this as a **"standby" alert** rather than a tradeable event.
 
-可能的解讀：
+## What to Watch
 
-- **操作失誤**：草稿誤發或平台技術問題，這在 Truth Social 上偶有先例
-- **刻意試探**：部分交易員會將異常貼文視為「大動作前的靜默」，但無數據支撐此假設
-- **刪文前兆**：需監控該貼文是否在數小時內被刪除或替換為實質內容
+- **Truth Social feed** — monitor for a follow-up or edited post within the next **15-30 minutes**
+- **S&P 500 futures (ES)** and **USD/JPY** — no immediate reaction expected, but be ready if substantive content drops
+- **VIX** — if a corrective post carries tariff or policy language, expect vol expansion
 
-## 建議關注
-
-1. **後續 1-2 小時內的新貼文**——若本則為誤發，真正的訊息可能即將到來
-2. **VIX 與 S&P 500 期貨**——目前無理由因此貼文調整部位
-3. **Truth Social 平台狀態**——確認是否為系統性問題而非個別貼文
-
-**結論：無可操作信號。維持現有部位，等待實質內容。**
+**Action: Hold. No signal to trade. Stay alert for the next post.**
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116348196909217775
-- Posted: Sat, 04 Apr 2026 19:56:34 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116348196297044208
+- Posted: Sat, 04 Apr 2026 19:56:25 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring
