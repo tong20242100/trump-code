@@ -1,18 +1,23 @@
 ⚡ 川普密碼｜即時快報
 
-## 川普對伊朗下最後通牒：不開放荷莫茲海峽就炸光
+## 川普重提出生公民權：這是奴隸的權利，不是有錢人的捷徑
 
-川普剛在 Truth Social 丟出一顆震撼彈：美國正與伊朗「一個新的、更理性的政權」談判結束軍事行動，但他話鋒一轉警告——若談判破裂且荷莫茲海峽未立即「Open for Business」，將「blowing up and completely obliterating all of their Electric Generating Plants, Oil Wells and Kharg Island」（炸毀所有電廠、油井及哈爾克島）。
+川普剛在 Truth Social 丟出一則火力十足的發言，直指出生公民權被濫用。他說：「Birthright Citizenship is not about rich people from China... It is about the BABIES OF SLAVES!」並強調這項立法的時間點正好是「THE EXACT END OF THE CIVIL WAR」，暗示現行制度已偏離原始目的，被全世界拿來「getting rich selling citizenships」。
 
-**為什麼你該緊張？** 荷莫茲海峽承載全球約 20% 石油運輸量，哈爾克島更是伊朗 90% 原油出口的命脈。這則貼文同時觸發三重信號：**DEAL + THREAT + BEARISH**，系統預測方向 **DOWN（信心度 80%）**。邏輯很清楚——就算談判成功是利多，但威脅摧毀石油基礎設施的言論本身就會推高地緣風險溢價，油價短線看漲、大盤承壓。
+**信號偵測：NEUTRAL，信心度 0%。** 這代表系統判定目前沒有明確的市場方向性衝擊——但別因此放鬆。
 
-**建議盯緊：** WTI 原油是否突破 $85、VIX 恐慌指數變化、以及未來 48 小時內伊朗方面的回應。能源股短多，但別追——這是恐懼財，不是趨勢財。
+**為什麼重要？** 川普過去多次試圖以行政命令限縮出生公民權，目前相關案件仍在聯邦法院纏鬥。這則發言是在為下一波政策行動暖場。若真的推動修憲或新行政令，將直接衝擊：赴美生子產業鏈、移民相關法律服務類股，以及更廣泛的移民政策預期。
+
+**建議關注：**
+- 未來 48 小時內是否有配套行政命令或國會動作
+- 移民政策敏感股（私營監獄 GEO、CXW）的異動
+- 美中關係指標——點名中國有錢人，外交摩擦風險升溫
 
 ---
 **📋 出處與方法**
 - 原文來源：Truth Social
-- 原文連結：https://truthsocial.com/@realDonaldTrump/116317880658472708
-- 發文時間：Mon, 30 Mar 2026 11:26:45 +0000
+- 原文連結：https://truthsocial.com/@realDonaldTrump/116317726153845042
+- 發文時間：Mon, 30 Mar 2026 10:47:27 +0000
 - 分析引擎：Trump Code AI（Claude Opus / Gemini Flash）
 - 信號偵測：基於 7,400+ 篇推文訓練的 551 條規則，z=5.39
 - 分析方法：NLP 關鍵字分類 → LLM 因果推理 → 信心度評分
