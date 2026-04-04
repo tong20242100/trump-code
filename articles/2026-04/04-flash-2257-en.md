@@ -1,35 +1,33 @@
-⚡ Trump Code | Flash — Vance Named "Fraud Czar," Blue States in Crosshairs
+⚡ Trump Code | Flash — 伊朗戰事升級：橋樑與電廠列入打擊清單
 
-## What He Said
+**信號：THREAT / ACTION / BEARISH | 方向：DOWN | 信心度：85%**
 
-Trump announced VP JD Vance will lead a nationwide anti-fraud initiative, dubbing him the **"FRAUD CZAR"** with focus "EVERYWHERE," but explicitly targeting Democratic states. Key quote: *"Vice President JD Vance is now in charge of 'FRAUD' in the United States... his focus will be 'EVERYWHERE,' but primarily in those Blue States where CROOKED DEMOCRAT POLITICIANS, like those in California, Illinois, Minnesota..."*
+---
 
-## Signal Detection
+川普在 Truth Social 宣布美軍對伊朗的攻擊將進一步升級，明確點名下一波目標："Bridges next, then Electric Power Plants!" 並強調美軍「甚至還沒開始摧毀伊朗剩餘的東西」（"hasn't even started destroying what's left in Iran"），同時向伊朗新政權喊話要求「快速行動」。
 
-- **Signal: ACTION** — New executive authority delegation
-- **Predicted direction: UP** (confidence: **30%**)
-- Low confidence reflects the political nature of this move — this is a **partisan governance action**, not an economic policy shift
+**為什麼重要：** 這不是空泛威脅——是附帶具體目標清單的作戰宣告。橋樑與電廠屬於民用基礎設施，打擊層級顯著升高，意味著：
 
-## Why It Matters (or Doesn't)
+- **油價**：中東衝突擴大直接推升原油風險溢價，WTI/Brent 短期看漲
+- **避險資產**：黃金、美債需求上升，殖利率承壓
+- **股市**：大盤承壓（S&P 500 期貨留意開盤缺口），能源股可能逆勢走強
+- **供應鏈**：荷莫茲海峽通行風險再度成為焦點
 
-This is **political theater with limited direct market impact**. No new spending, no tariffs, no regulatory changes announced. The "fraud" framing targets blue-state governments (Medicaid, federal grants, election admin), not corporate or financial fraud. No SEC, no FTC, no banking implications visible.
+**建議關注：**
 
-However, watch for **second-order effects**: if Vance's office begins withholding federal funds to targeted states, municipal bond markets in CA, IL, NY, and MN could see pressure. State-level government contractors may face disruption.
+1. WTI 原油期貨是否突破 $85 關卡
+2. VIX 恐慌指數開盤跳升幅度
+3. 美債 10Y 殖利率是否跌破 4.0%
+4. 伊朗官方回應時間——若 24 小時內未見降溫聲明，衝突升級機率大增
+5. 週五亞洲盤開盤反應（日經、原油期貨）
 
-## What to Watch
-
-- **Muni bonds**: CA, IL, NY, MN general obligation spreads over next 5 sessions
-- **Executive orders**: Any formal EO formalizing the "Fraud Czar" role with enforcement teeth
-- **Federal funding flows**: HHS/FEMA disbursement data to named states
-- **VIX**: No move expected — hold current positioning
-
-**Bottom line**: Political signal, not market signal. The 30% confidence says it all — file under noise unless enforcement details emerge.
+局勢從「有限打擊」轉向「基礎設施戰」，風險定價尚未完全反映。
 
 ---
 **📋 Sources & Methodology**
 - Original post: Truth Social
-- Source URL: https://truthsocial.com/@realDonaldTrump/116340682613576162
-- Posted: Fri, 03 Apr 2026 12:05:35 +0000
+- Source URL: https://truthsocial.com/@realDonaldTrump/116338464010194156
+- Posted: Fri, 03 Apr 2026 02:41:22 +0000
 - Analysis engine: Trump Code AI (Claude Opus / Gemini Flash)
 - Signal detection: 551 validated rules from 7,400+ posts (z=5.39)
 - Method: NLP keyword classification → LLM causal reasoning → confidence scoring

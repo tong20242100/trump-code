@@ -1,15 +1,15 @@
 {
   "type": "flash",
   "date": "2026-04-04",
-  "generated_at": "2026-04-04T22:57:40.355802+00:00",
-  "post_id": "116340682613576162",
-  "post_content": "Vice President JD Vance is now in charge of “FRAUD” in the United States. It is massive and pervasive, and the job he will be doing, in conjunction with many great people within the Trump Administrati",
-  "post_url": "https://truthsocial.com/@realDonaldTrump/116340682613576162",
+  "generated_at": "2026-04-04T22:57:54.369334+00:00",
+  "post_id": "116338464010194156",
+  "post_content": "Our Military, the greatest and most powerful (by far!) anywhere in the World, hasn’t even started destroying what’s left in Iran. Bridges next, then Electric Power Plants! New Regime leadership knows ",
+  "post_url": "https://truthsocial.com/@realDonaldTrump/116338464010194156",
   "post_source": "Truth Social",
-  "post_time": "Fri, 03 Apr 2026 12:05:35 +0000",
-  "signals": "ACTION",
-  "direction": "UP",
-  "confidence": 0.3,
+  "post_time": "Fri, 03 Apr 2026 02:41:22 +0000",
+  "signals": "THREAT, ACTION, BEARISH",
+  "direction": "DOWN",
+  "confidence": 0.85,
   "analysis_engine": "Trump Code AI (Claude Opus / Gemini Flash)",
   "analysis_method": "NLP keyword classification → LLM causal reasoning → confidence scoring",
   "rules_base": "551 validated rules from 7,400+ posts (z=5.39)",
@@ -17,17 +17,17 @@
     "zh": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-zh.md",
-      "length": 818
+      "length": 850
     },
     "en": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-en.md",
-      "length": 2293
+      "length": 1133
     },
     "ja": {
       "status": "ok",
       "path": "/Users/tkman/Projects/trump-code/articles/2026-04/04-flash-2257-ja.md",
-      "length": 915
+      "length": 964
     }
   }
 }
