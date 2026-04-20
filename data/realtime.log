@@ -1,6 +1,11 @@
 /Users/tong/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
   warnings.warn(
-[05:09:26] ============================================================
-[05:09:26] 🔴 川普密碼 即時閉環引擎
-[05:09:26]    監控間隔: 300 秒
-[05:09:26] ============================================================
+[05:28:26] ============================================================
+[05:28:26] 🔴 川普密碼 即時閉環引擎
+[05:28:26]    監控間隔: 300 秒
+[05:28:26] ============================================================
+[05:28:59]    ⚠️ trumpstruth.org 失敗: The read operation timed out
+[05:28:59]    📡 三源抓取: CNN:50 → 合計 50 篇
+[05:28:59] 🆕 偵測到 20 篇新推文！
+[05:28:59]    📥 寫入 20 篇新推文到 trump_posts_all.json（總計 44202 篇）
+[05:29:00]    📊 Polymarket 快照: 316 個市場 (20 事件)
