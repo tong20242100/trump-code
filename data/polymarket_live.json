@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-20T05:39:40Z",
+  "timestamp": "2026-04-20T05:59:48Z",
   "markets": [
     {
       "question": "Trump announces end of military operations against Iran by March 1st?",
@@ -145,28 +145,28 @@
       "question": "Trump announces end of military operations against Iran by April 21st?",
       "token_id": "255065605338578830188740670352",
       "outcome": "Yes",
-      "price": 0.075,
+      "price": 0.065,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
       "question": "Trump announces end of military operations against Iran by April 21st?",
       "token_id": "563035637235801826442380231341",
       "outcome": "No",
-      "price": 0.925,
+      "price": 0.935,
       "slug": "trump-announces-end-of-military-operations-against-iran-by"
     },
     {
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "926377706175971731068420551849",
       "outcome": "Yes",
-      "price": 0.795,
+      "price": 0.785,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "943157941935490595813354136971",
       "outcome": "No",
-      "price": 0.205,
+      "price": 0.215,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
@@ -215,14 +215,14 @@
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "915987717927737601163903665841",
       "outcome": "Yes",
-      "price": 0.0015,
+      "price": 0.0005,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "386778569605826294521821592459",
       "outcome": "No",
-      "price": 0.9985,
+      "price": 0.9995,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
@@ -257,14 +257,14 @@
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "134583178712091873660895315936",
       "outcome": "Yes",
-      "price": 0.25,
+      "price": 0.265,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
       "question": "Will Donald Trump announce that the United States blockade of the Strait of Hormuz has been lifted b",
       "token_id": "193266552752443026534762004308",
       "outcome": "No",
-      "price": 0.75,
+      "price": 0.735,
       "slug": "trump-announces-us-blockade-of-hormuz-lifted-by"
     },
     {
@@ -313,42 +313,42 @@
       "question": "Will Trump agree to Iranian enrichment of uranium in April?",
       "token_id": "114039718947824856296327956055",
       "outcome": "Yes",
-      "price": 0.3185,
+      "price": 0.316,
       "slug": "what-will-the-us-agree-to"
     },
     {
       "question": "Will Trump agree to Iranian enrichment of uranium in April?",
       "token_id": "947052467971393257468312407292",
       "outcome": "No",
-      "price": 0.6815,
+      "price": 0.684,
       "slug": "what-will-the-us-agree-to"
     },
     {
       "question": "Will Trump agree to Iranian transit fees in the Strait of Hormuz in April?",
       "token_id": "929678480567157468928703749269",
       "outcome": "Yes",
-      "price": 0.18,
+      "price": 0.165,
       "slug": "what-will-the-us-agree-to"
     },
     {
       "question": "Will Trump agree to Iranian transit fees in the Strait of Hormuz in April?",
       "token_id": "869279880538094050895356737997",
       "outcome": "No",
-      "price": 0.82,
+      "price": 0.835,
       "slug": "what-will-the-us-agree-to"
     },
     {
       "question": "Will Trump agree to unfreeze Iranian assets in April?",
       "token_id": "114279892165355139639656270909",
       "outcome": "Yes",
-      "price": 0.38,
+      "price": 0.385,
       "slug": "what-will-the-us-agree-to"
     },
     {
       "question": "Will Trump agree to unfreeze Iranian assets in April?",
       "token_id": "109723883413723885323614655800",
       "outcome": "No",
-      "price": 0.62,
+      "price": 0.615,
       "slug": "what-will-the-us-agree-to"
     },
     {
@@ -481,14 +481,14 @@
       "question": "Trump announces US x Iran ceasefire end by April 21, 2026?",
       "token_id": "161616618254172483867632982864",
       "outcome": "Yes",
-      "price": 0.235,
+      "price": 0.23,
       "slug": "trump-announces-us-x-iran-ceasefire-by"
     },
     {
       "question": "Trump announces US x Iran ceasefire end by April 21, 2026?",
       "token_id": "441484009182550274601698297941",
       "outcome": "No",
-      "price": 0.765,
+      "price": 0.77,
       "slug": "trump-announces-us-x-iran-ceasefire-by"
     },
     {
@@ -691,70 +691,70 @@
       "question": "Will Donald Trump publicly insult someone on April 19, 2026?",
       "token_id": "890348844111295070844425582588",
       "outcome": "Yes",
-      "price": 0.0075,
+      "price": 0.0085,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 19, 2026?",
       "token_id": "601483776629445216859340844042",
       "outcome": "No",
-      "price": 0.9925,
+      "price": 0.9915,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 20, 2026?",
       "token_id": "775899403167926131255105334538",
       "outcome": "Yes",
-      "price": 0.85,
+      "price": 0.84,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 20, 2026?",
       "token_id": "773500089019347094825934920121",
       "outcome": "No",
-      "price": 0.15,
+      "price": 0.16,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 21, 2026?",
       "token_id": "808999852485484698292788917424",
       "outcome": "Yes",
-      "price": 0.775,
+      "price": 0.785,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 21, 2026?",
       "token_id": "316618806092168637989002326694",
       "outcome": "No",
-      "price": 0.225,
+      "price": 0.215,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 22, 2026?",
       "token_id": "786202818586685725547407388104",
       "outcome": "Yes",
-      "price": 0.765,
+      "price": 0.77,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 22, 2026?",
       "token_id": "425142189839847173156343344797",
       "outcome": "No",
-      "price": 0.235,
+      "price": 0.23,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 23, 2026?",
       "token_id": "203769491658033351760248236505",
       "outcome": "Yes",
-      "price": 0.8,
+      "price": 0.785,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 23, 2026?",
       "token_id": "150159127518358626033203104727",
       "outcome": "No",
-      "price": 0.2,
+      "price": 0.215,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
@@ -775,14 +775,14 @@
       "question": "Will Donald Trump publicly insult someone on April 25, 2026?",
       "token_id": "674079951252285288793138708328",
       "outcome": "Yes",
-      "price": 0.795,
+      "price": 0.8,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 25, 2026?",
       "token_id": "505181870073529946157927869273",
       "outcome": "No",
-      "price": 0.205,
+      "price": 0.2,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
@@ -817,14 +817,14 @@
       "question": "Will Donald Trump publicly insult someone on April 28, 2026?",
       "token_id": "986838560027728544769995757433",
       "outcome": "Yes",
-      "price": 0.765,
+      "price": 0.79,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
       "question": "Will Donald Trump publicly insult someone on April 28, 2026?",
       "token_id": "397605835175790480070364495432",
       "outcome": "No",
-      "price": 0.235,
+      "price": 0.21,
       "slug": "will-trump-publicly-insult-someone-on"
     },
     {
@@ -985,28 +985,28 @@
       "question": "Will Donald Trump post 180-199 Truth Social posts from April 14 to April 21, 2026?",
       "token_id": "315720795524247065391426385452",
       "outcome": "Yes",
-      "price": 0.2745,
+      "price": 0.2705,
       "slug": "donald-trump-of-truth-social-posts-april-14-april-21"
     },
     {
       "question": "Will Donald Trump post 180-199 Truth Social posts from April 14 to April 21, 2026?",
       "token_id": "229441621570324129448141257494",
       "outcome": "No",
-      "price": 0.7255,
+      "price": 0.7295,
       "slug": "donald-trump-of-truth-social-posts-april-14-april-21"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from April 14 to April 21, 2026?",
       "token_id": "610172765271978492089686460881",
       "outcome": "Yes",
-      "price": 0.7195,
+      "price": 0.718,
       "slug": "donald-trump-of-truth-social-posts-april-14-april-21"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from April 14 to April 21, 2026?",
       "token_id": "560175392224808569497162970075",
       "outcome": "No",
-      "price": 0.2805,
+      "price": 0.282,
       "slug": "donald-trump-of-truth-social-posts-april-14-april-21"
     },
     {
@@ -1041,14 +1041,14 @@
       "question": "Will Trump post \"Stupid\" this week on Truth Social?",
       "token_id": "109108885502434294590165168632",
       "outcome": "Yes",
-      "price": 0.23,
+      "price": 0.24,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"Stupid\" this week on Truth Social?",
       "token_id": "341648321986129324369604481255",
       "outcome": "No",
-      "price": 0.77,
+      "price": 0.76,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
@@ -1139,14 +1139,14 @@
       "question": "Will Trump post \"UFC\" this week on Truth Social?",
       "token_id": "801914867637017977787443702863",
       "outcome": "Yes",
-      "price": 0.0055,
+      "price": 0.003,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"UFC\" this week on Truth Social?",
       "token_id": "304163724789631519099858666254",
       "outcome": "No",
-      "price": 0.9945,
+      "price": 0.997,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
@@ -1167,14 +1167,14 @@
       "question": "Will Trump post \"POTUS\" this week on Truth Social?",
       "token_id": "110355507989397906037727775153",
       "outcome": "Yes",
-      "price": 0.4525,
+      "price": 0.416,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"POTUS\" this week on Truth Social?",
       "token_id": "864573941069930925572371233795",
       "outcome": "No",
-      "price": 0.5475,
+      "price": 0.584,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
@@ -1237,28 +1237,28 @@
       "question": "Will Trump post \"Epic Fury\" this week on Truth Social?",
       "token_id": "666032902451020091850687693991",
       "outcome": "Yes",
-      "price": 0.0045,
+      "price": 0.0005,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"Epic Fury\" this week on Truth Social?",
       "token_id": "664667379674001754598374373802",
       "outcome": "No",
-      "price": 0.9955,
+      "price": 0.9995,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"Crypto\" or \"Bitcoin\" this week on Truth Social?",
       "token_id": "156853304374288479662323994849",
       "outcome": "Yes",
-      "price": 0.0085,
+      "price": 0.014,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"Crypto\" or \"Bitcoin\" this week on Truth Social?",
       "token_id": "603632554778803037780100796008",
       "outcome": "No",
-      "price": 0.9915,
+      "price": 0.986,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
@@ -1335,14 +1335,14 @@
       "question": "Will Trump post \"Democrat Shutdown\" this week on Truth Social?",
       "token_id": "128384135459111448781701317621",
       "outcome": "Yes",
-      "price": 0.008,
+      "price": 0.005,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
       "question": "Will Trump post \"Democrat Shutdown\" this week on Truth Social?",
       "token_id": "112413238064646541422333561333",
       "outcome": "No",
-      "price": 0.992,
+      "price": 0.995,
       "slug": "what-will-trump-post-this-week-april-13-april-19"
     },
     {
@@ -1475,14 +1475,14 @@
       "question": "Will Trump and Putin meet next in Russia?",
       "token_id": "114969117085303536359017775946",
       "outcome": "Yes",
-      "price": 0.063,
+      "price": 0.061,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Russia?",
       "token_id": "841607265207227347458531131043",
       "outcome": "No",
-      "price": 0.937,
+      "price": 0.939,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -1503,14 +1503,14 @@
       "question": "Will Trump and Putin meet next in United States?",
       "token_id": "111607224355283321566791910366",
       "outcome": "Yes",
-      "price": 0.01,
+      "price": 0.009,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in United States?",
       "token_id": "918060056587323613624188689000",
       "outcome": "No",
-      "price": 0.99,
+      "price": 0.991,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -1531,14 +1531,14 @@
       "question": "Will Trump and Putin meet next in Ukraine?",
       "token_id": "147914044230572529376611410664",
       "outcome": "Yes",
-      "price": 0.0025,
+      "price": 0.002,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in Ukraine?",
       "token_id": "106682481186987633026080201327",
       "outcome": "No",
-      "price": 0.9975,
+      "price": 0.998,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -1573,14 +1573,14 @@
       "question": "Will Trump and Putin meet next in a Gulf country?",
       "token_id": "114740238485572031075485221686",
       "outcome": "Yes",
-      "price": 0.0095,
+      "price": 0.01,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in a Gulf country?",
       "token_id": "938545769039226141742152973921",
       "outcome": "No",
-      "price": 0.9905,
+      "price": 0.99,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -1615,42 +1615,42 @@
       "question": "Will Trump and Putin meet next in another EU country?",
       "token_id": "588205739318232459483409664394",
       "outcome": "Yes",
-      "price": 0.01,
+      "price": 0.0095,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in another EU country?",
       "token_id": "366378804547335039070067132167",
       "outcome": "No",
-      "price": 0.99,
+      "price": 0.9905,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin not meet?",
       "token_id": "497639180095989976122376956272",
       "outcome": "Yes",
-      "price": 0.8235,
+      "price": 0.8195,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin not meet?",
       "token_id": "113815968600583754149446319361",
       "outcome": "No",
-      "price": 0.1765,
+      "price": 0.1805,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in China?",
       "token_id": "744581702129947391461211007278",
       "outcome": "Yes",
-      "price": 0.025,
+      "price": 0.0245,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
       "question": "Will Trump and Putin meet next in China?",
       "token_id": "676530230698688619693619672728",
       "outcome": "No",
-      "price": 0.975,
+      "price": 0.9755,
       "slug": "where-will-trump-and-putin-meet-next-584"
     },
     {
@@ -1727,14 +1727,14 @@
       "question": "Will Donald Trump publicly insult Barack Obama by April 30, 2026?",
       "token_id": "752185897352952374112816983906",
       "outcome": "Yes",
-      "price": 0.5,
+      "price": 0.36,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Barack Obama by April 30, 2026?",
       "token_id": "368642592161946185961029746576",
       "outcome": "No",
-      "price": 0.5,
+      "price": 0.64,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
@@ -1783,28 +1783,28 @@
       "question": "Will Donald Trump publicly insult Pam Bondi by April 30, 2026?",
       "token_id": "456395953665546970829160721058",
       "outcome": "Yes",
-      "price": 0.0335,
+      "price": 0.034,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Pam Bondi by April 30, 2026?",
       "token_id": "573257051521198467832370154357",
       "outcome": "No",
-      "price": 0.9665,
+      "price": 0.966,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Benjamin Netanyahu by April 30, 2026?",
       "token_id": "993639066212753937085817779216",
       "outcome": "Yes",
-      "price": 0.0155,
+      "price": 0.015,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Benjamin Netanyahu by April 30, 2026?",
       "token_id": "470062130628757167816569171665",
       "outcome": "No",
-      "price": 0.9845,
+      "price": 0.985,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
@@ -1839,14 +1839,14 @@
       "question": "Will Donald Trump publicly insult Pope Leo XIV by April 30, 2026?",
       "token_id": "103787338009408036660795995436",
       "outcome": "Yes",
-      "price": 0.115,
+      "price": 0.12,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Pope Leo XIV by April 30, 2026?",
       "token_id": "799235816257084771119069218020",
       "outcome": "No",
-      "price": 0.885,
+      "price": 0.88,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
@@ -1881,14 +1881,14 @@
       "question": "Will Donald Trump publicly insult Keir Starmer by April 30, 2026?",
       "token_id": "666788793526396282818052905116",
       "outcome": "Yes",
-      "price": 0.27,
+      "price": 0.225,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Keir Starmer by April 30, 2026?",
       "token_id": "100969942529318408254010608634",
       "outcome": "No",
-      "price": 0.73,
+      "price": 0.775,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
@@ -1909,14 +1909,14 @@
       "question": "Will Donald Trump publicly insult Nicolás Maduro by April 30, 2026?",
       "token_id": "479173015483431989950539245691",
       "outcome": "Yes",
-      "price": 0.55,
+      "price": 0.54,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
       "question": "Will Donald Trump publicly insult Nicolás Maduro by April 30, 2026?",
       "token_id": "995505204530657913387751726449",
       "outcome": "No",
-      "price": 0.45,
+      "price": 0.46,
       "slug": "who-will-trump-publicly-insult-by-april-30"
     },
     {
@@ -1951,57 +1951,15 @@
       "question": "Will Trump acquire Greenland before 2027?",
       "token_id": "516162325567819335283998515633",
       "outcome": "Yes",
-      "price": 0.083,
+      "price": 0.0825,
       "slug": "will-trump-acquire-greenland-before-2027"
     },
     {
       "question": "Will Trump acquire Greenland before 2027?",
       "token_id": "572162725645295484646864636912",
       "outcome": "No",
-      "price": 0.917,
+      "price": 0.9175,
       "slug": "will-trump-acquire-greenland-before-2027"
-    },
-    {
-      "question": "Trump declassifies new UFO files by March 31?",
-      "token_id": "229683213758113008005520132752",
-      "outcome": "Yes",
-      "price": 0.0,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
-    },
-    {
-      "question": "Trump declassifies new UFO files by March 31?",
-      "token_id": "727871328220811877647290988482",
-      "outcome": "No",
-      "price": 1.0,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
-    },
-    {
-      "question": "Trump declassifies new UFO files by December 31?",
-      "token_id": "110909454559432475759543541712",
-      "outcome": "Yes",
-      "price": 0.86,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
-    },
-    {
-      "question": "Trump declassifies new UFO files by December 31?",
-      "token_id": "787266727586322885163430156166",
-      "outcome": "No",
-      "price": 0.14,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
-    },
-    {
-      "question": "Trump declassifies new UFO files by April 30?",
-      "token_id": "111444429154062241012067025058",
-      "outcome": "Yes",
-      "price": 0.15,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
-    },
-    {
-      "question": "Trump declassifies new UFO files by April 30?",
-      "token_id": "259085089282883956070320543161",
-      "outcome": "No",
-      "price": 0.85,
-      "slug": "trump-declassifies-new-ufo-files-by-march-31"
     },
     {
       "question": "Will Donald Trump post 0-19 Truth Social posts from April 17 to April 24, 2026?",
@@ -2063,14 +2021,14 @@
       "question": "Will Donald Trump post 160-179 Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "193056485819474896921434708350",
       "outcome": "Yes",
-      "price": 0.128,
+      "price": 0.127,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
     },
     {
       "question": "Will Donald Trump post 160-179 Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "736359530287314773128120436708",
       "outcome": "No",
-      "price": 0.872,
+      "price": 0.873,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
     },
     {
@@ -2133,29 +2091,71 @@
       "question": "Will Donald Trump post 180-199 Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "594658193399114129918883429637",
       "outcome": "Yes",
-      "price": 0.3755,
+      "price": 0.3765,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
     },
     {
       "question": "Will Donald Trump post 180-199 Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "680317422736664918036790707395",
       "outcome": "No",
-      "price": 0.6245,
+      "price": 0.6235,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "386236760182299230349306957270",
       "outcome": "Yes",
-      "price": 0.538,
+      "price": 0.539,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
     },
     {
       "question": "Will Donald Trump post 200+ Truth Social posts from April 17 to April 24, 2026?",
       "token_id": "115339019862890231764843589543",
       "outcome": "No",
-      "price": 0.462,
+      "price": 0.461,
       "slug": "donald-trump-of-truth-social-posts-april-17-april-24"
+    },
+    {
+      "question": "Trump declassifies new UFO files by March 31?",
+      "token_id": "229683213758113008005520132752",
+      "outcome": "Yes",
+      "price": 0.0,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
+    },
+    {
+      "question": "Trump declassifies new UFO files by March 31?",
+      "token_id": "727871328220811877647290988482",
+      "outcome": "No",
+      "price": 1.0,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
+    },
+    {
+      "question": "Trump declassifies new UFO files by December 31?",
+      "token_id": "110909454559432475759543541712",
+      "outcome": "Yes",
+      "price": 0.865,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
+    },
+    {
+      "question": "Trump declassifies new UFO files by December 31?",
+      "token_id": "787266727586322885163430156166",
+      "outcome": "No",
+      "price": 0.135,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
+    },
+    {
+      "question": "Trump declassifies new UFO files by April 30?",
+      "token_id": "111444429154062241012067025058",
+      "outcome": "Yes",
+      "price": 0.15,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
+    },
+    {
+      "question": "Trump declassifies new UFO files by April 30?",
+      "token_id": "259085089282883956070320543161",
+      "outcome": "No",
+      "price": 0.85,
+      "slug": "trump-declassifies-new-ufo-files-by-march-31"
     },
     {
       "question": "Will Trump declare war on Iran by February 28, 2026?",
@@ -2189,14 +2189,14 @@
       "question": "Will Trump declare war on Iran by April 30, 2026?",
       "token_id": "183379156091568496201729444558",
       "outcome": "Yes",
-      "price": 0.0415,
+      "price": 0.046,
       "slug": "will-trump-declare-war-on-iran-by"
     },
     {
       "question": "Will Trump declare war on Iran by April 30, 2026?",
       "token_id": "966006264993641890186954400183",
       "outcome": "No",
-      "price": 0.9585,
+      "price": 0.954,
       "slug": "will-trump-declare-war-on-iran-by"
     },
     {
@@ -2214,6 +2214,6 @@
       "slug": "will-trump-resign-by-december-31-2026"
     }
   ],
-  "updated": "2026-04-20T05:39:40Z",
+  "updated": "2026-04-20T05:59:48Z",
   "total": 316
 }

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-04-20T05:49:37.893249+00:00",
+  "source": "https://ix.cnn.io/data/truth-social/truth_archive.csv",
+  "total_posts": 32681,
+  "date_range": {
+    "earliest": "2022-02-14T15:54:32.528Z",
+    "latest": "2026-04-20T02:54:49.966Z"
+  },
+  "president_term2": {
+    "start": "2025-01-20T00:00:00.000Z",
+    "total_posts": 8023,
+    "with_text": 6077,
+    "pure_media": 1946,
+    "retweets": 318
+  },
+  "cleanup": {
+    "encoding_fixed": 1595,
+    "entity_fixed": 1222
+  },
+  "files": {
+    "clean_all_csv": "clean_all.csv",
+    "clean_all_json": "clean_all.json",
+    "clean_president_csv": "clean_president.csv",
+    "clean_president_json": "clean_president.json"
+  }
+}
