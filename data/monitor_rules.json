@@ -2,1295 +2,1258 @@
   {
     "id": "R0001",
     "features": [
-      "both_tariff_and_deal",
-      "kw_disaster",
-      "kw_jobs"
+      "kw_beautiful",
+      "posts_11_20",
+      "tariff_without_deal"
     ],
-    "direction": "SHORT",
+    "direction": "LONG",
     "hold": 3,
-    "train_wr": 100.0,
+    "train_wr": 90.9,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 95.5
   },
   {
     "id": "R0002",
     "features": [
-      "kw_biden",
-      "kw_india",
-      "kw_tariffs"
+      "kw_jobs",
+      "kw_thank_you_for_your_attention_2plus"
     ],
-    "direction": "SHORT",
-    "hold": 2,
+    "direction": "LONG",
+    "hold": 1,
     "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
+    "test_wr": 85.7,
+    "score": 92.9
   },
   {
     "id": "R0003",
     "features": [
-      "kw_disaster",
-      "kw_india",
-      "kw_tariffs"
+      "kw_deal",
+      "kw_economy",
+      "kw_inflation"
     ],
-    "direction": "SHORT",
+    "direction": "LONG",
     "hold": 2,
     "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
+    "test_wr": 83.3,
+    "score": 91.7
   },
   {
     "id": "R0004",
     "features": [
-      "kw_deal_2plus",
-      "kw_economy",
-      "kw_jobs"
+      "kw_incredible",
+      "kw_tariff",
+      "kw_terrible"
     ],
     "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
+    "hold": 1,
+    "train_wr": 83.3,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 91.7
   },
   {
     "id": "R0005",
     "features": [
-      "kw_deal_2plus",
-      "kw_dow_2plus",
-      "kw_jobs"
+      "kw_tariffs",
+      "kw_trade",
+      "posts_6_10"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 81.8,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.9
   },
   {
     "id": "R0006",
     "features": [
-      "kw_deal",
-      "kw_perfect",
-      "kw_thank_you_for_your_attention"
+      "kw_beautiful",
+      "posts_11_20",
+      "tariff_without_deal"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 81.8,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.9
   },
   {
     "id": "R0007",
     "features": [
-      "kw_deal_2plus",
-      "kw_europe",
-      "kw_jobs"
+      "caps_low",
+      "open_thank_you_for_your_attention"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
     "id": "R0008",
     "features": [
-      "open_dow",
-      "open_trade",
-      "questions_yes"
+      "kw_tariff",
+      "pre_billion"
     ],
     "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
+    "hold": 1,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
     "id": "R0009",
     "features": [
-      "kw_economy",
-      "kw_interest_rate",
-      "questions_yes"
+      "kw_billion",
+      "kw_tariff",
+      "pre_billion"
     ],
     "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
+    "hold": 1,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
     "id": "R0010",
     "features": [
-      "excl_heavy",
-      "kw_interest_rate",
-      "kw_tremendous"
+      "kw_tariff",
+      "kw_trade",
+      "posts_6_10"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
     "id": "R0011",
     "features": [
-      "kw_deal",
-      "kw_perfect"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0012",
-    "features": [
-      "kw_perfect",
-      "kw_thank_you_for_your_attention",
-      "posts_11_20"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0013",
-    "features": [
-      "kw_dow_2plus",
-      "open_jobs",
-      "open_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0014",
-    "features": [
-      "is_friday",
-      "kw_interest_rate",
-      "kw_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0015",
-    "features": [
-      "is_friday",
-      "kw_interest_rate",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0016",
-    "features": [
-      "kw_economy",
-      "kw_energy",
-      "kw_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0017",
-    "features": [
-      "kw_inflation",
-      "open_china",
-      "open_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0018",
-    "features": [
-      "kw_signed",
-      "kw_tariffs_2plus",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0019",
-    "features": [
-      "kw_deal_2plus",
-      "kw_economy",
-      "kw_jobs"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0020",
-    "features": [
-      "is_friday",
-      "kw_china",
-      "kw_economy"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0021",
-    "features": [
-      "is_friday",
-      "kw_economy",
-      "open_china"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0022",
-    "features": [
-      "is_friday",
-      "open_china",
-      "pre_great"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0023",
-    "features": [
-      "is_friday",
-      "kw_tariffs_2plus",
-      "kw_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0024",
-    "features": [
-      "both_tariff_and_deal",
-      "open_biden",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0025",
-    "features": [
       "kw_biden",
-      "kw_china",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0026",
-    "features": [
-      "kw_china",
-      "open_biden",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0027",
-    "features": [
-      "kw_deal",
-      "open_biden",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0028",
-    "features": [
-      "is_friday",
-      "kw_beautiful",
-      "kw_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0029",
-    "features": [
-      "kw_china",
-      "kw_thank_you_for_your_attention",
-      "open_inflation"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0030",
-    "features": [
-      "is_friday",
-      "kw_economy",
-      "open_tariffs"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0031",
-    "features": [
-      "kw_beautiful",
-      "open_trade",
-      "open_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0032",
-    "features": [
-      "kw_beautiful",
-      "kw_interest_rate",
-      "kw_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0033",
-    "features": [
-      "kw_deal_2plus",
-      "kw_dow_2plus",
-      "kw_jobs"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0034",
-    "features": [
-      "is_friday",
-      "kw_tariffs_2plus",
-      "open_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0035",
-    "features": [
-      "is_friday",
-      "kw_tariffs_2plus",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0036",
-    "features": [
-      "is_friday",
-      "kw_dow_2plus",
-      "kw_tariffs_2plus"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0037",
-    "features": [
-      "is_friday",
-      "kw_dow_2plus",
-      "open_tariff"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0038",
-    "features": [
-      "is_friday",
-      "kw_dow_2plus",
-      "open_tariffs"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0039",
-    "features": [
-      "is_friday",
-      "kw_beautiful",
-      "kw_corrupt"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0040",
-    "features": [
-      "kw_economy",
-      "kw_interest_rate",
-      "kw_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0041",
-    "features": [
-      "kw_tariffs_2plus",
-      "kw_thank_you_for_your_attention",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0042",
-    "features": [
-      "kw_tariff_2plus",
-      "open_trade",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0043",
-    "features": [
-      "kw_beautiful",
-      "open_thank_you_for_your_attention",
-      "open_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0044",
-    "features": [
-      "is_friday",
-      "kw_signed",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0045",
-    "features": [
-      "kw_executive_order",
-      "kw_jobs",
-      "kw_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0046",
-    "features": [
-      "kw_dow_2plus",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0047",
-    "features": [
-      "kw_energy",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0048",
-    "features": [
-      "kw_dow_2plus",
-      "kw_energy",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0049",
-    "features": [
-      "kw_dow_2plus",
-      "kw_interest_rate",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0050",
-    "features": [
-      "kw_dow_2plus",
-      "open_dow",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0051",
-    "features": [
-      "kw_energy",
-      "kw_interest_rate",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0052",
-    "features": [
-      "kw_energy",
-      "open_dow",
-      "open_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0053",
-    "features": [
-      "kw_perfect",
-      "kw_thank_you_for_your_attention",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0054",
-    "features": [
-      "kw_perfect",
-      "open_thank_you_for_your_attention",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0055",
-    "features": [
-      "kw_tremendous",
-      "open_thank_you_for_your_attention",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0056",
-    "features": [
-      "kw_interest_rate",
-      "open_energy"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0057",
-    "features": [
-      "excl_heavy",
-      "kw_energy",
-      "kw_interest_rate"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0058",
-    "features": [
-      "excl_heavy",
-      "kw_interest_rate",
-      "open_energy"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0059",
-    "features": [
-      "kw_energy",
-      "kw_interest_rate",
-      "open_energy"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0060",
-    "features": [
-      "is_friday",
-      "kw_tremendous",
-      "open_jobs"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0061",
-    "features": [
-      "is_friday",
-      "kw_thank_you_for_your_attention",
-      "open_china"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0062",
-    "features": [
-      "kw_china",
       "kw_corrupt",
       "kw_economy"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
-    "id": "R0063",
+    "id": "R0012",
     "features": [
-      "kw_beautiful",
-      "kw_tariffs_2plus",
-      "volume_falling_3d"
+      "kw_thank_you_for_your_attention_2plus",
+      "open_dow"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
-    "id": "R0064",
+    "id": "R0013",
     "features": [
-      "open_inflation",
-      "open_trade",
-      "pre_great"
+      "kw_deal",
+      "kw_incredible",
+      "kw_president_of_the_united_states"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 80.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 90.0
   },
   {
-    "id": "R0065",
+    "id": "R0014",
     "features": [
-      "kw_energy",
-      "kw_interest_rate",
-      "kw_tremendous"
+      "kw_deal",
+      "kw_immediately",
+      "kw_incredible"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 77.8,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 88.9
   },
   {
-    "id": "R0066",
-    "features": [
-      "kw_economy",
-      "open_trade",
-      "open_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0067",
+    "id": "R0015",
     "features": [
       "is_friday",
-      "kw_beautiful",
-      "open_tariffs"
+      "kw_jobs"
     ],
     "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
+    "hold": 3,
+    "train_wr": 76.9,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 88.5
   },
   {
-    "id": "R0068",
+    "id": "R0016",
     "features": [
       "is_friday",
-      "kw_signed",
-      "kw_tremendous"
+      "kw_beautiful"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 75.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 87.5
   },
   {
-    "id": "R0069",
+    "id": "R0017",
     "features": [
-      "kw_tariffs_2plus",
-      "open_thank_you_for_your_attention",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0070",
-    "features": [
-      "is_friday",
-      "open_tariff",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0071",
-    "features": [
-      "kw_signed",
-      "open_tariff",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0072",
-    "features": [
-      "kw_economy",
-      "open_tariffs",
+      "kw_historic",
       "open_thank_you_for_your_attention"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 75.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 87.5
+  },
+  {
+    "id": "R0018",
+    "features": [
+      "kw_immediately",
+      "open_economy"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0019",
+    "features": [
+      "kw_economy",
+      "kw_immediately",
+      "open_economy"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0020",
+    "features": [
+      "kw_trade",
+      "open_economy"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0021",
+    "features": [
+      "kw_economy",
+      "kw_trade",
+      "open_economy"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0022",
+    "features": [
+      "is_friday",
+      "kw_thank_you_for_your_attention_2plus"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 100.0,
+    "test_wr": 75.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0023",
+    "features": [
+      "kw_billion",
+      "kw_fake",
+      "kw_jobs"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0024",
+    "features": [
+      "kw_incredible",
+      "kw_terrible"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0025",
+    "features": [
+      "kw_economy",
+      "kw_terrible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 75.0,
+    "test_wr": 100.0,
+    "score": 87.5
+  },
+  {
+    "id": "R0026",
+    "features": [
+      "kw_biden",
+      "kw_corrupt"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 73.7,
+    "test_wr": 100.0,
+    "score": 86.8
+  },
+  {
+    "id": "R0027",
+    "features": [
+      "kw_beautiful",
+      "kw_tariffs",
+      "tariff_without_deal"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 84.6,
+    "test_wr": 88.9,
+    "score": 86.8
+  },
+  {
+    "id": "R0028",
+    "features": [
+      "kw_immediately",
+      "kw_incredible",
+      "kw_maga"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 73.3,
+    "test_wr": 100.0,
+    "score": 86.7
+  },
+  {
+    "id": "R0029",
+    "features": [
+      "kw_incredible",
+      "open_fake"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 90.0,
+    "test_wr": 83.3,
+    "score": 86.7
+  },
+  {
+    "id": "R0030",
+    "features": [
+      "kw_fake",
+      "kw_incredible",
+      "open_fake"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 90.0,
+    "test_wr": 83.3,
+    "score": 86.7
+  },
+  {
+    "id": "R0031",
+    "features": [
+      "excl_heavy",
+      "kw_inflation"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 93.3,
+    "test_wr": 80.0,
+    "score": 86.7
+  },
+  {
+    "id": "R0032",
+    "features": [
+      "heavy_night",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 85.7,
+    "test_wr": 87.5,
+    "score": 86.6
+  },
+  {
+    "id": "R0033",
+    "features": [
+      "kw_economy",
+      "kw_immediately",
+      "kw_tariffs"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0034",
+    "features": [
+      "kw_dow_2plus",
+      "kw_energy",
+      "kw_president_of_the_united_states"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0035",
+    "features": [
+      "open_russia",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 92.9,
+    "test_wr": 80.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0036",
+    "features": [
+      "kw_russia",
+      "open_russia",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 92.9,
+    "test_wr": 80.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0037",
+    "features": [
+      "open_economy",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0038",
+    "features": [
+      "kw_economy",
+      "open_economy",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0039",
+    "features": [
+      "kw_complete_and_total",
+      "kw_incredible",
+      "kw_president_of_the_united_states"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0040",
+    "features": [
+      "is_friday",
+      "kw_maga"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 92.9,
+    "test_wr": 80.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0041",
+    "features": [
+      "kw_incredible",
+      "kw_thank_you_for_your_attention_2plus",
+      "pre_great"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0042",
+    "features": [
+      "kw_incredible",
+      "volume_falling_3d"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0043",
+    "features": [
+      "kw_immediately",
+      "kw_incredible",
+      "kw_president_djt"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.7,
+    "test_wr": 100.0,
+    "score": 86.4
+  },
+  {
+    "id": "R0044",
+    "features": [
+      "kw_beautiful",
+      "kw_economy",
+      "kw_inflation"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.2,
+    "test_wr": 100.0,
+    "score": 86.1
+  },
+  {
+    "id": "R0045",
+    "features": [
+      "kw_biden",
+      "kw_immediately",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 72.2,
+    "test_wr": 100.0,
+    "score": 86.1
+  },
+  {
+    "id": "R0046",
+    "features": [
+      "kw_deal",
+      "volume_falling_3d"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 72.2,
+    "test_wr": 100.0,
+    "score": 86.1
+  },
+  {
+    "id": "R0047",
+    "features": [
+      "kw_energy",
+      "open_ukraine"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 91.7,
+    "test_wr": 80.0,
+    "score": 85.8
+  },
+  {
+    "id": "R0048",
+    "features": [
+      "kw_energy",
+      "kw_ukraine",
+      "open_ukraine"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 91.7,
+    "test_wr": 80.0,
+    "score": 85.8
+  },
+  {
+    "id": "R0049",
+    "features": [
+      "kw_economy_2plus",
+      "kw_immediately"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0050",
+    "features": [
+      "kw_economy",
+      "kw_economy_2plus",
+      "kw_immediately"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0051",
+    "features": [
+      "kw_economy",
+      "kw_tariff",
+      "open_tremendous"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0052",
+    "features": [
+      "kw_energy",
+      "kw_immediately",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0053",
+    "features": [
+      "kw_immediately",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0054",
+    "features": [
+      "kw_president_of_the_united_states",
+      "questions_yes"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 71.4,
+    "test_wr": 100.0,
+    "score": 85.7
+  },
+  {
+    "id": "R0055",
+    "features": [
+      "kw_jobs",
+      "kw_thank_you_for_your_attention_2plus"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 100.0,
+    "test_wr": 71.4,
+    "score": 85.7
+  },
+  {
+    "id": "R0056",
+    "features": [
+      "is_friday",
+      "kw_economy",
+      "kw_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 90.9,
+    "test_wr": 80.0,
+    "score": 85.5
+  },
+  {
+    "id": "R0057",
+    "features": [
+      "kw_tariff",
+      "open_fake"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 90.9,
+    "test_wr": 80.0,
+    "score": 85.5
+  },
+  {
+    "id": "R0058",
+    "features": [
+      "kw_fake",
+      "kw_tariff",
+      "open_fake"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 90.9,
+    "test_wr": 80.0,
+    "score": 85.5
+  },
+  {
+    "id": "R0059",
+    "features": [
+      "kw_complete_and_total",
+      "kw_immediately",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.6,
+    "test_wr": 100.0,
+    "score": 85.3
+  },
+  {
+    "id": "R0060",
+    "features": [
+      "kw_dow_2plus",
+      "kw_energy",
+      "kw_immediately"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.6,
+    "test_wr": 100.0,
+    "score": 85.3
+  },
+  {
+    "id": "R0061",
+    "features": [
+      "kw_economy",
+      "kw_tariffs",
+      "tariff_without_deal"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 70.6,
+    "test_wr": 100.0,
+    "score": 85.3
+  },
+  {
+    "id": "R0062",
+    "features": [
+      "avg_len_long",
+      "kw_inflation"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0063",
+    "features": [
+      "kw_deal",
+      "kw_historic",
+      "kw_trade"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0064",
+    "features": [
+      "kw_energy",
+      "kw_russia",
+      "open_ukraine"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 90.0,
+    "test_wr": 80.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0065",
+    "features": [
+      "kw_complete_and_total",
+      "kw_immediately",
+      "kw_jobs"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0066",
+    "features": [
+      "kw_maga",
+      "kw_never_let_you_down",
+      "posts_11_20"
+    ],
+    "direction": "SHORT",
+    "hold": 1,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0067",
+    "features": [
+      "kw_amazing",
+      "kw_biden",
+      "kw_dow_2plus"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0068",
+    "features": [
+      "kw_incredible",
+      "kw_thank_you_for_your_attention_2plus",
+      "kw_wonderful"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0069",
+    "features": [
+      "kw_dow_2plus",
+      "kw_immediately",
+      "kw_tariffs"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0070",
+    "features": [
+      "kw_economy",
+      "kw_tariff",
+      "mostly_open"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0071",
+    "features": [
+      "caps_low",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0072",
+    "features": [
+      "kw_deal",
+      "kw_historic",
+      "kw_trade"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
   },
   {
     "id": "R0073",
     "features": [
-      "kw_america_first",
       "kw_beautiful",
-      "kw_terrible"
+      "kw_fake",
+      "kw_jobs"
     ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 85.0
   },
   {
     "id": "R0074",
     "features": [
-      "kw_economy",
-      "kw_interest_rate",
-      "kw_tariffs_2plus"
+      "kw_tariffs",
+      "kw_wonderful",
+      "open_thank_you_for_your_attention"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 70.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 85.0
   },
   {
     "id": "R0075",
     "features": [
-      "kw_deal",
-      "kw_inflation",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0076",
-    "features": [
-      "kw_economy",
-      "kw_interest_rate",
-      "open_dow"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0077",
-    "features": [
-      "both_tariff_and_deal",
-      "kw_disaster",
-      "open_tariffs"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0078",
-    "features": [
-      "kw_deal",
-      "kw_disaster",
-      "open_tariffs"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0079",
-    "features": [
-      "kw_deal",
-      "kw_perfect"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0080",
-    "features": [
-      "kw_signed",
-      "kw_tariff",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0081",
-    "features": [
-      "kw_interest_rate",
-      "kw_signed",
-      "kw_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0082",
-    "features": [
-      "kw_interest_rate",
-      "kw_signed",
-      "open_dow"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0083",
-    "features": [
-      "kw_interest_rate",
-      "kw_signed",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0084",
-    "features": [
-      "both_tariff_and_deal",
-      "kw_disaster",
-      "kw_incredible"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0085",
-    "features": [
-      "kw_deal",
-      "kw_perfect",
-      "kw_thank_you_for_your_attention"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0086",
-    "features": [
-      "kw_dow_2plus",
-      "kw_interest_rate",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0087",
-    "features": [
-      "kw_interest_rate",
-      "kw_tremendous",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0088",
-    "features": [
-      "kw_tariff_2plus",
-      "open_thank_you_for_your_attention",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0089",
-    "features": [
-      "kw_tariffs",
-      "open_thank_you_for_your_attention",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0090",
-    "features": [
-      "kw_tariffs_2plus",
-      "open_thank_you_for_your_attention",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0091",
-    "features": [
-      "is_friday",
-      "kw_beautiful",
-      "open_jobs"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0092",
-    "features": [
-      "kw_economy",
-      "kw_interest_rate",
-      "questions_yes"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0093",
-    "features": [
-      "kw_interest_rate",
-      "volume_falling_3d"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0094",
-    "features": [
-      "is_friday",
-      "kw_economy",
-      "open_trade"
-    ],
-    "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0095",
-    "features": [
-      "excl_heavy",
-      "kw_interest_rate",
-      "kw_tremendous"
-    ],
-    "direction": "LONG",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0096",
-    "features": [
-      "both_tariff_and_deal",
-      "kw_biden",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0097",
-    "features": [
-      "kw_biden",
-      "kw_deal",
-      "open_disaster"
-    ],
-    "direction": "SHORT",
-    "hold": 3,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
-  },
-  {
-    "id": "R0098",
-    "features": [
-      "both_tariff_and_deal",
-      "kw_dow_2plus",
+      "kw_president_djt",
       "kw_signed"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
+    "train_wr": 70.0,
     "test_wr": 100.0,
-    "score": 100.0
+    "score": 85.0
+  },
+  {
+    "id": "R0076",
+    "features": [
+      "kw_fake",
+      "kw_jobs",
+      "kw_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0077",
+    "features": [
+      "kw_fake",
+      "kw_jobs",
+      "kw_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0078",
+    "features": [
+      "kw_incredible",
+      "kw_tariffs",
+      "posts_11_20"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 70.0,
+    "test_wr": 100.0,
+    "score": 85.0
+  },
+  {
+    "id": "R0079",
+    "features": [
+      "kw_russia",
+      "open_thank_you_for_your_attention"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 89.5,
+    "test_wr": 80.0,
+    "score": 84.7
+  },
+  {
+    "id": "R0080",
+    "features": [
+      "kw_immediately",
+      "kw_tariffs",
+      "kw_tremendous"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0081",
+    "features": [
+      "kw_tariff_2plus",
+      "pre_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0082",
+    "features": [
+      "kw_tariff",
+      "kw_tariff_2plus",
+      "pre_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0083",
+    "features": [
+      "kw_amazing",
+      "kw_historic"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0084",
+    "features": [
+      "kw_historic",
+      "mostly_open"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0085",
+    "features": [
+      "kw_energy",
+      "volume_falling_3d"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0086",
+    "features": [
+      "is_friday",
+      "kw_fantastic"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 69.2,
+    "test_wr": 100.0,
+    "score": 84.6
+  },
+  {
+    "id": "R0087",
+    "features": [
+      "is_friday",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 85.7,
+    "test_wr": 83.3,
+    "score": 84.5
+  },
+  {
+    "id": "R0088",
+    "features": [
+      "is_friday",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 85.7,
+    "test_wr": 83.3,
+    "score": 84.5
+  },
+  {
+    "id": "R0089",
+    "features": [
+      "kw_economy",
+      "kw_immediately",
+      "kw_incredible"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 68.8,
+    "test_wr": 100.0,
+    "score": 84.4
+  },
+  {
+    "id": "R0090",
+    "features": [
+      "kw_immediately",
+      "kw_incredible",
+      "kw_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 68.8,
+    "test_wr": 100.0,
+    "score": 84.4
+  },
+  {
+    "id": "R0091",
+    "features": [
+      "kw_incredible",
+      "kw_thank_you_for_your_attention_2plus"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 80.0,
+    "test_wr": 88.9,
+    "score": 84.4
+  },
+  {
+    "id": "R0092",
+    "features": [
+      "kw_signed",
+      "pre_great"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 68.4,
+    "test_wr": 100.0,
+    "score": 84.2
+  },
+  {
+    "id": "R0093",
+    "features": [
+      "kw_biden",
+      "volume_rising_3d"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 68.4,
+    "test_wr": 100.0,
+    "score": 84.2
+  },
+  {
+    "id": "R0094",
+    "features": [
+      "kw_tariff_2plus",
+      "pre_great",
+      "pre_tariff"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 68.2,
+    "test_wr": 100.0,
+    "score": 84.1
+  },
+  {
+    "id": "R0095",
+    "features": [
+      "kw_tariff_2plus",
+      "pre_great",
+      "tariff_without_deal"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 88.2,
+    "test_wr": 80.0,
+    "score": 84.1
+  },
+  {
+    "id": "R0096",
+    "features": [
+      "kw_deal",
+      "kw_inflation"
+    ],
+    "direction": "LONG",
+    "hold": 2,
+    "train_wr": 82.4,
+    "test_wr": 85.7,
+    "score": 84.0
+  },
+  {
+    "id": "R0097",
+    "features": [
+      "kw_deal",
+      "kw_economy",
+      "kw_inflation"
+    ],
+    "direction": "LONG",
+    "hold": 1,
+    "train_wr": 84.6,
+    "test_wr": 83.3,
+    "score": 84.0
+  },
+  {
+    "id": "R0098",
+    "features": [
+      "kw_beautiful",
+      "pre_great",
+      "questions_yes"
+    ],
+    "direction": "LONG",
+    "hold": 3,
+    "train_wr": 68.0,
+    "test_wr": 100.0,
+    "score": 84.0
   },
   {
     "id": "R0099",
     "features": [
-      "excl_heavy",
-      "kw_economy",
-      "kw_tariffs_2plus"
+      "kw_president_of_the_united_states",
+      "kw_thank_you_for_your_attention_2plus"
     ],
     "direction": "LONG",
     "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
+    "train_wr": 90.0,
+    "test_wr": 77.8,
+    "score": 83.9
   },
   {
     "id": "R0100",
     "features": [
-      "kw_agreement",
-      "kw_jobs",
-      "kw_thank_you_for_your_attention"
+      "kw_deal",
+      "kw_dow_2plus",
+      "kw_trade"
     ],
     "direction": "LONG",
-    "hold": 2,
-    "train_wr": 100.0,
-    "test_wr": 100.0,
-    "score": 100.0
+    "hold": 1,
+    "train_wr": 81.8,
+    "test_wr": 85.7,
+    "score": 83.8
   }
 ]
