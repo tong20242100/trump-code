@@ -9,3 +9,116 @@
 [05:28:59] 🆕 偵測到 20 篇新推文！
 [05:28:59]    📥 寫入 20 篇新推文到 trump_posts_all.json（總計 44202 篇）
 [05:29:00]    📊 Polymarket 快照: 316 個市場 (20 事件)
+[05:29:02]    🪙 $TRUMP: $2.82 (-0.2%)
+[05:29:02]    📈 SPY: $710.14 (+1.12%) | ES: $7119.75 | VIX: 17.48 (NORMAL)
+[05:29:02]    📝 [02:54] Ruddy: Trump Already Won the War With 9 Victories: https://www.newsmax.com/ruddy...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [02:54] McLaughlin Poll: Voters Back Trump on Iran: https://www.newsmax.com/mclaughlin/m...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [23:30] https://x.com/americafirsst/status/2045609944037077104?s=46...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [19:32] How the White House drew a new battle plan to take on the Washington press corps...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [19:31] Tariffs Are a Discipline, Not a Press Release: https://www.wsj.com/opinion/tarif...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]       信號: TARIFF(80%)
+[05:29:02]       預測: PM DOWN (80%) | 追蹤 5 個市場
+[05:29:02]    📝 [19:31] Vance's Anti-Fraud Task Force Hits Ground Running with Collection of Wins: https...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [19:23] Today, an Iranian-flagged cargo ship named TOUSKA, nearly 900 feet long and weig...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]       信號: THREAT(80%)
+[05:29:02]       預測: PM DOWN (80%) | 追蹤 5 個市場
+[05:29:02]    📝 [18:47] Why The Supreme Court Must Strike Down Birthright Citizenship: https://paulingra...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [18:47] McLaughlin Poll: Voters Back Trump on Iran: https://www.newsmax.com/mclaughlin/m...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [18:47] Trump, Iran and the Bottom Line for American Interests: https://www.realclearpol...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [18:47] Thank you to the Great Gregg Jarrett — A Giant Scam on the American Public. Hope...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [12:10] Iran decided to fire bullets yesterday in the Strait of Hormuz — A Total Violati...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]       信號: DEAL(90%), THREAT(75%)
+[05:29:02]       預測: PM NEUTRAL (30%) | 追蹤 5 個市場
+[05:29:02]    📝 [01:59] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428892032687901...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:55] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428873226666382...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:50] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428860408281064...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:49] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428856333288529...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:48] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428849678471426...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:43] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428830946804053...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:42] RT: https://truthsocial.com/users/realDonaldTrump/statuses/116428826144790728...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📝 [01:07] Whether people like Israel or not, they have proven to be a GREAT Ally of the Un...
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    ⚠️ LLM 分類例外: call_llm() got an unexpected keyword argument 'json_mode'
+[05:29:02]    📊佈局 劇本觸發: 攻擊+談判+關稅
+[05:29:02]       歷史: +0.430% | 建議: LONG — 施壓中
+[事件偵測] 掃描最近 5 天的信號模式...
+[事件偵測]    最近 5 天的信號:
+[事件偵測]    2026-03-14: 6 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-13: 14 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-11: 21 篇 | T=1 D=1 R=0
+[事件偵測]    2026-03-10: 8 篇 | T=0 D=2 R=0
+[事件偵測]    2026-03-08: 4 篇 | T=0 D=0 R=0
+[事件偵測]    ✅ 目前沒有偵測到醞釀中的事件模式
+[05:29:02]    🪙 $TRUMP: $2.82 (-0.2%)
+[05:29:02]    📊 Polymarket 快照: 316 個市場 (20 事件)
+[05:29:02]    📊 Polymarket: 316 個市場已更新
+[05:29:02] 驗證 21 個即時預測...
+[05:29:02]    ⚠️ $TRUMP 幣價快照失敗: HTTP Error 429: Too Many Requests
+[05:29:32] 📊 本輪: 20 新推文 | 3 預測 | 0 驗證
+[05:34:37]    📡 三源抓取: CNN:50 + trumpstruth:9(補漏1) → 合計 51 篇
+[05:34:37]    沒有新推文
+[事件偵測] 掃描最近 5 天的信號模式...
+[事件偵測]    最近 5 天的信號:
+[事件偵測]    2026-03-14: 6 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-13: 14 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-11: 21 篇 | T=1 D=1 R=0
+[事件偵測]    2026-03-10: 8 篇 | T=0 D=2 R=0
+[事件偵測]    2026-03-08: 4 篇 | T=0 D=0 R=0
+[事件偵測]    ✅ 目前沒有偵測到醞釀中的事件模式
+[05:34:37]    🪙 $TRUMP: $2.83 (-0.4%)
+[05:34:38]    📊 Polymarket 快照: 316 個市場 (20 事件)
+[05:34:38]    📊 Polymarket: 316 個市場已更新
+[05:34:38] 驗證 3 個即時預測...
+[05:39:39]    📡 三源抓取: CNN:50 + trumpstruth:9(補漏1) → 合計 51 篇
+[05:39:39]    沒有新推文
+[事件偵測] 掃描最近 5 天的信號模式...
+[事件偵測]    最近 5 天的信號:
+[事件偵測]    2026-03-14: 6 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-13: 14 篇 | T=0 D=1 R=0
+[事件偵測]    2026-03-11: 21 篇 | T=1 D=1 R=0
+[事件偵測]    2026-03-10: 8 篇 | T=0 D=2 R=0
+[事件偵測]    2026-03-08: 4 篇 | T=0 D=0 R=0
+[事件偵測]    ✅ 目前沒有偵測到醞釀中的事件模式
+[05:39:40]    🪙 $TRUMP: $2.82 (-0.6%)
+[05:39:40]    📊 Polymarket 快照: 316 個市場 (20 事件)
+[05:39:40]    📊 Polymarket: 316 個市場已更新
+[05:39:40] 驗證 3 個即時預測...
+[05:39:40]    ⚠️ $TRUMP 幣價快照失敗: HTTP Error 429: Too Many Requests

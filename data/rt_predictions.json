@@ -1299,7 +1299,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774381463",
@@ -1374,7 +1374,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774381463",
@@ -1449,7 +1449,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774381463",
@@ -1524,7 +1524,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774381771",
@@ -1599,7 +1599,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382080",
@@ -1683,7 +1683,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -1759,7 +1759,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -1834,7 +1834,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -1909,7 +1909,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -1993,7 +1993,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -2068,7 +2068,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -2143,7 +2143,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -2218,7 +2218,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -2293,7 +2293,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774382388",
@@ -2368,7 +2368,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774383310",
@@ -2443,7 +2443,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774443937",
@@ -2518,7 +2518,7 @@
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
-    "status": "LIVE"
+    "status": "EXPIRED"
   },
   {
     "id": "rt_1774443937",
@@ -2590,6 +2590,243 @@
     "divergence_detail": null,
     "trump_coin_at_signal": 3.36,
     "trump_coin_24h_change": 2.53,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "EXPIRED"
+  },
+  {
+    "id": "rt_1776662942",
+    "created_at": "2026-04-20T05:29:02Z",
+    "post_time": "2026-04-19T19:31:45.589Z",
+    "post_preview": "Tariffs Are a Discipline, Not a Press Release: https://www.wsj.com/opinion/tariffs-are-a-discipline-not-a-press-release-4022e09e",
+    "signals": [
+      {
+        "type": "TARIFF",
+        "confidence": 0.8,
+        "matched_keywords": [
+          "tariff",
+          "tariffs"
+        ],
+        "method": "keyword"
+      }
+    ],
+    "signal_types": [
+      "TARIFF"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.8,
+    "tracked_markets": [
+      {
+        "token_id": "455706941283062355801017880406",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "112691699136636025197139638532",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "498217121642241685638993540748",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "323789873922294151961812443627",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "127617713601282837094220087247",
+        "question": "Trump announces end of military operations against Iran by March 7th?",
+        "price_at_signal": 0.0
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 710.14,
+    "es_at_signal": 7119.75,
+    "spy_change_at_signal": 1.122,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 2.82,
+    "trump_coin_24h_change": -0.24,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1776662942",
+    "created_at": "2026-04-20T05:29:02Z",
+    "post_time": "2026-04-19T19:23:20.602Z",
+    "post_preview": "Today, an Iranian-flagged cargo ship named TOUSKA, nearly 900 feet long and weighing almost as much as an aircraft carrier, tried to get past our Naval Blockade, and it did not go well for them. The U",
+    "signals": [
+      {
+        "type": "THREAT",
+        "confidence": 0.8,
+        "matched_keywords": [
+          "block",
+          "sanction"
+        ],
+        "method": "keyword"
+      }
+    ],
+    "signal_types": [
+      "THREAT"
+    ],
+    "predicted_direction": "DOWN",
+    "confidence": 0.8,
+    "tracked_markets": [
+      {
+        "token_id": "455706941283062355801017880406",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "112691699136636025197139638532",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "498217121642241685638993540748",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "323789873922294151961812443627",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "127617713601282837094220087247",
+        "question": "Trump announces end of military operations against Iran by March 7th?",
+        "price_at_signal": 0.0
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 710.14,
+    "es_at_signal": 7119.75,
+    "spy_change_at_signal": 1.122,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 2.82,
+    "trump_coin_24h_change": -0.24,
+    "trump_coin_verify_1h": null,
+    "trump_coin_verify_3h": null,
+    "trump_coin_verify_6h": null,
+    "status": "LIVE"
+  },
+  {
+    "id": "rt_1776662942",
+    "created_at": "2026-04-20T05:29:02Z",
+    "post_time": "2026-04-19T12:10:10.035Z",
+    "post_preview": "Iran decided to fire bullets yesterday in the Strait of Hormuz — A Total Violation of our Ceasefire Agreement! Many of them were aimed at a French Ship, and a Freighter from the United Kingdom. That w",
+    "signals": [
+      {
+        "type": "DEAL",
+        "confidence": 0.9,
+        "matched_keywords": [
+          "deal",
+          "agreement"
+        ],
+        "method": "keyword"
+      },
+      {
+        "type": "THREAT",
+        "confidence": 0.75,
+        "matched_keywords": [
+          "block"
+        ],
+        "method": "keyword"
+      }
+    ],
+    "signal_types": [
+      "DEAL",
+      "THREAT"
+    ],
+    "predicted_direction": "NEUTRAL",
+    "confidence": 0.3,
+    "tracked_markets": [
+      {
+        "token_id": "455706941283062355801017880406",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "112691699136636025197139638532",
+        "question": "Trump announces end of military operations against Iran by March 1st?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "498217121642241685638993540748",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 0.0
+      },
+      {
+        "token_id": "323789873922294151961812443627",
+        "question": "Trump announces end of military operations against Iran by March 2nd?",
+        "price_at_signal": 1.0
+      },
+      {
+        "token_id": "127617713601282837094220087247",
+        "question": "Trump announces end of military operations against Iran by March 7th?",
+        "price_at_signal": 0.0
+      }
+    ],
+    "pm_price_at_signal": 0.0,
+    "pm_verify_1h": null,
+    "pm_verify_3h": null,
+    "pm_verify_6h": null,
+    "pm_verify_12h": null,
+    "pm_verify_24h": null,
+    "pm_verify_48h": null,
+    "pm_correct_1h": null,
+    "pm_correct_3h": null,
+    "spy_at_signal": 710.14,
+    "es_at_signal": 7119.75,
+    "spy_change_at_signal": 1.122,
+    "spy_verify_1h": null,
+    "spy_verify_3h": null,
+    "spy_verify_12h": null,
+    "spy_verify_24h": null,
+    "spy_verify_48h": null,
+    "spy_correct_1h": null,
+    "spy_correct_3h": null,
+    "pm_vs_stock_divergence": null,
+    "divergence_detail": null,
+    "trump_coin_at_signal": 2.82,
+    "trump_coin_24h_change": -0.24,
     "trump_coin_verify_1h": null,
     "trump_coin_verify_3h": null,
     "trump_coin_verify_6h": null,
